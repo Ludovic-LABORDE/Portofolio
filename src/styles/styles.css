@@ -1,0 +1,10 @@
+html, body {
+    height: 100vh;
+    background-color: #1f1f1f;
+}
+
+#root {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}

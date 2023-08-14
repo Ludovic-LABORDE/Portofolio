@@ -1,0 +1,107 @@
+@use '../../styles/var.scss';
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 1px solid #565656;
+    border-radius: 30px;
+    position: fixed;
+    z-index: 10;
+
+    &--status {
+        max-width: 110px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &--email {
+        font-size: 24px;
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+    
+    &--adress {
+        @extend .sidebar--email;
+        margin-bottom: 30px;
+    }
+
+    &--copyright {
+        font-size: 14px;
+        text-align: center;
+        color: var.$gray;
+        margin-bottom: 30px;
+    }
+
+    &--social {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 30px;
+
+        li {
+            width: 50px;
+            height: 50px;
+
+            a {
+                display: block;
+                line-height: 46px;
+                text-align: center;
+                border: 2px solid #565656;
+                border-radius: 50%;
+                color: var.$gray;
+                font-size: 20px;
+                transition: .3s;
+                font-size: 20px;
+
+                i {
+                    color: var.$gray;
+                }
+            }
+
+            a:hover {
+                border: 2px solid var.$green;
+
+                i {
+                    color: var.$green;
+                }
+            }
+        }
+    }
+
+    .btn--contact {
+        background: var.$green;
+        color: #000000;
+        display: block;
+        text-align: center;
+        padding: 11px 58px 10px 58px;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 30px;
+        justify-content: center;
+        text-transform: uppercase;
+        border: none;
+        transition: .3s;
+        cursor: pointer;
+        border: 2px solid var.$green;
+
+        i {
+            font-size: 24px;
+            margin-right: 10px;
+            display: block;
+            margin-bottom: 3px;
+        }
+    }
+
+    .btn--contact:hover {
+        background: none;
+        color: var.$green;
+    }
+}

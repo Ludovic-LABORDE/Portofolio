@@ -1,8 +1,8 @@
-import Card from "./Card/Card"
+import Bio from "../views/Header/Bio"
 
 const App = () => {
   return (
-    <Card />
+      <Bio/>
   )
 }
 

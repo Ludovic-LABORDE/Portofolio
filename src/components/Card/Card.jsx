@@ -4,7 +4,6 @@ import { Social } from './Social';
 import './Card.scss'
 
 const BioCard = () => {
-  console.log(Social)
   return (
     <div className="sidebar">
       <span className="sidebar--status">Web Developer</span>

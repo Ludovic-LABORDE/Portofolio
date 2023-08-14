@@ -1,4 +1,4 @@
-import Bio from "../views/Header/Bio"
+import Bio from "../../views/Header/Bio"
 
 const App = () => {
   return (

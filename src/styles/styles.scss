@@ -1,3 +1,5 @@
+@use './var.scss';
+
 html, body {
     height: 100vh;
     background-color: #1f1f1f;
@@ -7,4 +9,7 @@ html, body {
     display: flex;
     flex-direction: row;
     height: 100%;
+}
+p {
+    color: var.$gray;
 }

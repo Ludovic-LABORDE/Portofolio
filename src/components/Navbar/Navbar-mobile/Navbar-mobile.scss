@@ -1,0 +1,138 @@
+@use '../../../styles/var.scss';
+
+.mobile--menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #565656;
+        opacity: 0.5;
+    }
+
+    .mobile--menu--list {
+        max-width: 345px;
+        width: 100%;
+        margin-left: auto;
+        background: #191919;
+        height: 100%;
+        overflow-x: hidden;
+        padding-top: 50px;
+        margin-right: -250px;
+        transition: .3s;
+    }
+
+    .mobile--menu--wrap {
+        width: 46%;
+        margin: auto;
+
+        p {
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+
+        .nav--responsive {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            right: auto;
+            left: 0;
+            top: 0;
+            text-align: center;
+            gap: 20px;
+            padding: 24px 0;
+            transform: translateY(0);
+            background: none;
+            border-radius: 0;
+            border: none;
+            z-index: 20;
+            margin-bottom: 30px;
+
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    i {
+                        font-size: 20px;
+                        display: block;
+                        margin-bottom: 2px;
+                        gap: 10px;
+                        color: var.$gray;
+                    }
+
+                    span {
+                        display: block;
+                        position: relative;
+                        right: 0;
+                        opacity: 1;
+                        visibility: visible;
+                        color: #999999;
+                        background: none;
+                        margin: 0;
+                        padding: 0;
+                        border-radius: 0;
+                        transition: .3s;
+                        font-size: 14px;
+                    }
+                }
+                a:hover  {
+                    i {
+                        color: var.$green;
+                    }
+                    span {
+                        color: #fff;
+                    }  
+                }
+            }
+        }
+    }
+
+    .mobile--menu--social {
+        width: 46%;
+        margin: auto;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .social--links {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            a {
+                color: #999999;
+                transition: .3s;
+                font-size: 16px;
+            }
+            a:hover {
+                i {
+                    color: var.$green;
+                }
+            }
+        }
+    }
+}
+
+.mobile--menu.active {
+    opacity: 1;
+    visibility: visible;
+
+    .mobile--menu--list {
+        margin-right: 0;
+    }
+}

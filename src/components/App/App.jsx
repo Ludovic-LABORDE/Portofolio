@@ -1,8 +1,12 @@
 import Bio from "../../views/Header/Bio"
+import Main from "../../views/Main/Main"
 
 const App = () => {
   return (
-      <Bio/>
+    <>
+      <Bio />
+      <Main />
+    </>
   )
 }
 

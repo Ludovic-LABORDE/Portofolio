@@ -32,7 +32,7 @@
                 right: 100%;
                 color: #fff;
                 display: block;
-                padding: 3px 8px;
+                padding: 5px 10px;
                 border-radius: 5px;
                 visibility: hidden;
                 opacity: 0;
@@ -40,8 +40,8 @@
 
             span:before {
                 content: '';
-                width: 10px;
-                height: 10px;
+                width: 12px;
+                height: 12px;
                 background: #404042;
                 position: absolute;
                 right: -3px;

@@ -1,0 +1,21 @@
+section {
+    color: #fff;
+    padding-bottom: 68px;
+    .custom--container {
+        box-sizing: border-box;
+        max-width: 1130px;
+        padding: 0 15px;
+        margin: auto;
+    
+        .content--width {
+            max-width: 770px;
+            width: 100%;
+            margin-left: auto;
+    
+            .section--header {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

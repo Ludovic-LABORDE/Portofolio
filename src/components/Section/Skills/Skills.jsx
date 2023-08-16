@@ -1,14 +1,14 @@
 import '../Section.scss'
-import './Resume.scss'
+import './Skills.scss'
 
-const Resume = ({children}) => {
+const Skills = ({children}) => {
     return (
         <section>
             <div className='custom--container'>
                 <div className='hero--content content--width'>
                     <div className='section--header'>
                         {children}
-                        Resume
+                        Skills
                     </div>
                 </div>
             </div>
@@ -16,4 +16,4 @@ const Resume = ({children}) => {
     )
 }
 
-export default Resume;
+export default Skills;

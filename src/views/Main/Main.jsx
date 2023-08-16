@@ -1,21 +1,21 @@
 import { Title } from "../../components/Section/Section-name/section-title";
+import Section from "../../components/Section/Section";
 import './Main.scss'
 
 const Main = () => {
     return (
         <main className='wrapper--main'>
-            <section>
-                <div className='custom--container'>
-                    {Title.map((index) => {
-                        return (
-                            <h4 key={index.id} className='subtitle'>
-                                <i className={index.class}></i>
-                                {index.name}
-                            </h4>
-                        )
-                    })}
-                </div>
-            </section>
+            {Title.map((index) => {
+                return (
+                    <Section key={index.id}>
+                        
+                        <h4 key={index.id} className='subtitle'>
+                            <i className={index.class}></i>
+                            {index.name}
+                        </h4>
+                    </Section>
+                )
+            })}
         </main>
     )
 }

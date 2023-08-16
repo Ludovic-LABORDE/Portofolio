@@ -1,9 +1,17 @@
+import '../Section.scss'
 import './About.scss'
 
-const About = () => {
+const About = ({ children }) => {
     return (
         <section>
-            About
+            <div className='custom--container'>
+                <div className='hero--content content--width'>
+                    <div className='section--header'>
+                        {children}
+                        About
+                    </div>
+                </div>
+            </div>
         </section>
     )
 }

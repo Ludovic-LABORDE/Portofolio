@@ -8,7 +8,7 @@ const NavbarMobile = () => {
 
     const active = useSelector(state => state.data.active);
     const dispatch = useDispatch();
-    console.log(Navbar)
+    // console.log(Navbar)
     return (
         <nav className={`mobile--menu ${active}`}>
             <div className='overlay' onClick={() => dispatch(setActive(''))}></div>

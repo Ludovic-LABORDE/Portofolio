@@ -8,7 +8,7 @@ const BioCard = () => {
     <div className="sidebar">
       <div className="sidebar--status"><span>Web</span><span>Developer</span></div>
       <Avatar alt="Ludovic Laborde" src="/static/images/avatar/1.jpg" sx={{ width: 100, height: 100, margin: '20px' }}/>
-      <h2 className="sidebar--email">laborde.contact1@gmail.com</h2>
+      <h2 className="sidebar--email">contact1@gmail.com</h2>
       <h2 className="sidebar--adress">Dijon, France</h2>
       <p className="sidebar--copyright">© 2023 All Rights Reserved</p>
       <ul className="sidebar--social">

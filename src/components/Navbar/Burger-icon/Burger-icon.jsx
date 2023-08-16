@@ -1,4 +1,4 @@
-import { setActive } from '../../../store/reducers/dataReducer';
+import { setActiveMenu } from '../../../store/reducers/dataReducer';
 import { useDispatch } from 'react-redux'
 
 import './Burger-icon.scss'
@@ -6,7 +6,7 @@ import './Burger-icon.scss'
 const BurgerIcon = () => {
     const dispatch = useDispatch();
     return (
-        <span className='icon--menu' onClick={() => dispatch(setActive('active'))}>
+        <span className='icon--menu' onClick={() => dispatch(setActiveMenu('active'))}>
             <span className='bar'></span>
             <span className='bar'></span>
         </span>

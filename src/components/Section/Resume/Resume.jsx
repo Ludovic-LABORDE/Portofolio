@@ -1,14 +1,24 @@
 import '../Section.scss'
 import './Resume.scss'
 
-const Resume = ({children}) => {
+const Resume = ({children, props}) => {
     return (
         <section>
-            <div className='custom--container'>
+            <div className='custom--container' id='Resume' ref={props}>
                 <div className='hero--content content--width'>
                     <div className='section--header'>
                         {children}
-                        Resume
+                        <h1>
+                        Introduce    font-size: 78px;
+    letter-spacing: -0.2px;
+    line-height: 90px;
+    margin-bottom: 43px;
+    font-weight: 300;                            Introduce    font-size: 78px;
+    letter-spacing: -0.2px;
+    line-height: 90px;
+    margin-bottom: 43px;
+    font-weight: 300;
+                        </h1>
                     </div>
                 </div>
             </div>

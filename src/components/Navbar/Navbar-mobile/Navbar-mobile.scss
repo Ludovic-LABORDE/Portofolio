@@ -89,6 +89,16 @@
                         font-size: 14px;
                     }
                 }
+                a.active {
+                    i {
+                        transition: 1s;
+                        color: var.$green;
+                    }
+                    span {
+                        transition: 1.5s;
+                        color: #fff;
+                    }
+                }
                 a:hover  {
                     i {
                         color: var.$green;

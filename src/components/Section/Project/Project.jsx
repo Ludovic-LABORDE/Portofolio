@@ -1,10 +1,10 @@
 import '../Section.scss'
-import './Skills.scss'
+import './Project.scss'
 
-const Skills = ({children, props}) => {
+const Project = ({children, props}) => {
     return (
-        <section className='reveal' id='Skills' ref={props}>
-            <div className='custom--container'>
+        <section className='reveal' id='Project'>
+            <div className='custom--container' id='Project' ref={props}>
                 <div className='hero--content content--width'>
                     <div className='section--header'>
                         {children}
@@ -26,4 +26,4 @@ const Skills = ({children, props}) => {
     )
 }
 
-export default Skills;
+export default Project;

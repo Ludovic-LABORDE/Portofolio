@@ -16,11 +16,16 @@ export const Title = [
     },
     {
         id: 4,
+        name: 'Project',
+        class: 'las la-grip-vertical'
+    },
+    {
+        id: 5,
         name: 'my skills',
         class: 'las la-shapes'
     },
     {
-        id: 5,
+        id: 6,
         name: 'contact me',
         class: 'las la-envelope'
     },

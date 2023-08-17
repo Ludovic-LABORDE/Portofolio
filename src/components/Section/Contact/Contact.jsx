@@ -3,7 +3,7 @@ import './Contact.scss'
 
 const Contact = ({children, props}) => {
     return (
-        <section id='Contact' ref={props}>
+        <section className='reveal' id='Contact' ref={props}>
             <div className='custom--container'>
                 <div className='hero--content content--width'>
                     <div className='section--header'>

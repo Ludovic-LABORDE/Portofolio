@@ -3,23 +3,22 @@ import './Introduce.scss'
 
 const Introduce = ({ children, props }) => {
     return (
-        <section className='first--section' id='Introduce' ref={props}>
+        <section className='first--section reveal' id='Introduce' ref={props}>
             <div className='custom--container'>
                 <div className='hero--content content--width'>
                     <div className='section--header'>
                         {children}
                         <h1>
-                        Introduce    font-size: 78px;
-    letter-spacing: -0.2px;
-    line-height: 90px;
-    margin-bottom: 43px;
-    font-weight: 300;                            Introduce    font-size: 78px;
-    letter-spacing: -0.2px;
-    line-height: 90px;
-    margin-bottom: 43px;
-    font-weight: 300;
+                        Hello, I'm <span className='title--name'>Ludovic</span>, a passionate web developer.
                         </h1>
                     </div>
+                    <p>
+                    "Every line of code I write is an opportunity to create, innovate, and let my passion for development shape the digital future."
+                    </p>
+                    <a className='project--btn' href='#Project'>
+                        <span >My Project</span>
+                        <i className='las la-arrow-down'></i>
+                    </a>
                 </div>
             </div>
         </section>

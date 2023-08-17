@@ -19,12 +19,18 @@ export const Navbar = [
     },
     {
         id: 4,
+        class: 'las la-grip-vertical',
+        section: 'Project',
+        alt: 'Project'
+    },
+    {
+        id: 5,
         class: 'las la-shapes',
         section: 'Skills',
         alt: 'Skills'
     },
     {
-        id: 5,
+        id: 6,
         class: 'las la-envelope',
         section: 'Contact',
         alt: 'Contact'

@@ -3,7 +3,7 @@ import './Resume.scss'
 
 const Resume = ({children, props}) => {
     return (
-        <section>
+        <section className='reveal' id='Resume'>
             <div className='custom--container' id='Resume' ref={props}>
                 <div className='hero--content content--width'>
                     <div className='section--header'>

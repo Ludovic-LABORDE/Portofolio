@@ -3,8 +3,8 @@ import './About.scss'
 
 const About = ({ children, props }) => {
     return (
-        <section className='reveal' id='About' ref={props}>
-            <div className='custom--container'>
+        <section id='About' ref={props}>
+            <div className='custom--container reveal'>
                 <div className='hero--content content--width'>
                     <div className='section--header'>
                         {children}

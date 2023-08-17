@@ -9,7 +9,7 @@ const useActiveScroll = (props) => {
         const options = {
             root: null, // Utilisez la fenêtre comme conteneur par défaut
             rootMargin: '0px',
-            threshold: .4, // Lorsque la moitié de l'élément est visible
+            threshold: .4, // Configuration du scroll
         };
 
         const callback = (entries, observer, event) => {
@@ -17,7 +17,7 @@ const useActiveScroll = (props) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     let i = document.querySelectorAll('.link--section')
-                    let j = document.querySelector(`#${entry.target.id}`)
+                    let j = document.querySelector(`#${entry.target.id}`).firstChild
                     options.threshold === 0.51 && naviguate(`#${entry.target.id}`)
                     j.classList.add('active')
                      i.forEach((index) => {
@@ -30,8 +30,8 @@ const useActiveScroll = (props) => {
                 }
                 else{
                     let i = document.querySelectorAll('.link--section')
-                    let j = document.querySelector(`#${entry.target.id}`)
-                    j.classList.remove('active')
+                    // let j = document.querySelector(`#${entry.target.id}`)
+                    // j.classList.remove('active')
                     i.forEach((index) => {
                        let path = index.href.split('#')[1]
                        entry.target.id === path && 

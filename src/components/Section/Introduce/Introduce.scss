@@ -3,56 +3,105 @@
 .first--section {
     padding: 68px 0;
 
-    h1 {
-        font-size: 78px;
-        letter-spacing: -0.2px;
-        line-height: 90px;
-        margin-bottom: 43px;
-        font-weight: 300;
-        .title--name{
-            color: var.$green;
+    .hero--content {
+        h1 {
+            font-size: 78px;
+            letter-spacing: -0.2px;
+            line-height: 90px;
+            margin-bottom: 43px;
+            font-weight: 300;
+
+            .title--name {
+                color: var.$green;
+            }
         }
-    }
-    p {
-        font-style: italic;
-        line-height: 30px;
-        max-width: 550px;
-        margin-bottom: 31px;
-    }
-    .project--btn {
-        width: 175px;
-        height: 175px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: auto;
-        border-radius: 50%;
-        border: 1px solid #575757;
-        position: relative;
-        overflow: hidden;
-        animation: bounce 0.7s ease infinite;
-        behavior: smooth;
-        span{
-            position: absolute;
-            top: 30%;
-            font-size: 24px;
-            color: var.$green;
-           
+
+        &--text {
+            font-style: italic;
+            line-height: 30px;
+            max-width: 550px;
+            margin-bottom: 31px;
         }
-        i  {
-            position: absolute;
-            color: #fff;
-            font-size: 40px;
-            bottom: 20%;
-            display: block;
-            
+
+        .hero--footer {
+            display: flex;
+            justify-content: space-between;
+
+            .project--btn {
+                width: 175px;
+                height: 175px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                justify-content: center;
+                flex-direction: column;
+                border-radius: 50%;
+                border: 1px solid #575757;
+                position: relative;
+                overflow: hidden;
+                animation: bounce 0.7s ease infinite;
+                behavior: smooth;
+
+                span {
+                    position: absolute;
+                    top: 30%;
+                    font-size: 24px;
+                    color: var.$green;
+
+                }
+
+                i {
+                    position: absolute;
+                    color: #fff;
+                    font-size: 40px;
+                    bottom: 20%;
+                    display: block;
+
+                }
+            }
+
+            .hero--exp {
+                display: flex;
+                justify-content: center;
+                gap: 100px;
+                margin-top: 200px;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    width: min-content;
+                    h2 {
+                        display: inline;
+                        font-size: 72px;
+                        color: var.$green;
+                        line-height: 56px;
+                        margin-bottom: 38px;
+                        letter-spacing: -0.2px;
+                        font-weight: 300;
+                    }
+    
+                    p {
+                        display: inline;
+                        font-size: 24px;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                    }
+                }
+
+            }
         }
     }
 }
-@keyframes bounce{
-    from {top: 106px;}
-    50%  {top: 86px;}
-    to   {top: 106px;}
+
+@keyframes bounce {
+    from {
+        top: 0px;
+    }
+
+    50% {
+        top: 15px;
+    }
+
+    to {
+        top: 0px;
+    }
 }

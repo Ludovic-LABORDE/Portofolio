@@ -14,6 +14,8 @@ export const handleAnchorClick = (event, section) => {
     event.currentTarget.classList.add('active');
 
     if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'smooth',  block: "start"});
     }
 };
+
+// export const 

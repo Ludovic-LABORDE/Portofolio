@@ -1,6 +1,6 @@
 section {
     color: #fff;
-    padding-bottom: 68px;
+    padding: 68px 0;
 
     .custom--container {
         box-sizing: border-box;
@@ -19,20 +19,21 @@ section {
             }
         }
     }
+    .reveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+    
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
 }
 
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-}
 
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
-}
 
 h1 {
     font-size: 64px;

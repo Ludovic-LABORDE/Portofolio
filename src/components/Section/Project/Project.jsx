@@ -1,7 +1,12 @@
+import { useDispatch } from 'react-redux';
+import { setActiveBackground } from '../../../store/reducers/dataReducer';
 import '../Section.scss'
 import './Project.scss'
 
 const Project = ({ children, props }) => {
+    const dispatch = useDispatch();
+    
+    
     return (
         <section id='Project' ref={props}>
             <div className='custom--container reveal'>
@@ -9,13 +14,20 @@ const Project = ({ children, props }) => {
                     <div className='section--header'>
                         {children}
                         <div className='project--header'>
-                            <h1>
+                            <h2>
                                 My <span>Project</span>
-                            </h1>
+                            </h2>
                         </div>
                         <div className='project--content'>
-                            <div>
-                                
+                            <div className='project--content--cosmokids'>
+                                <div className='cosmokids--content' onClick={() => dispatch(setActiveBackground(true))}>
+                                    <img src="https://dummyimage.com/800x400/000/aaa"/>
+                                    <ul>
+                                        <li><a href='#'>React-JS</a></li>
+                                        <li><a href='#'>Larevel/PHP</a></li>
+                                    </ul>
+                                </div>
+                                <h3>Cosmokids - Educationnal Plateform for kids</h3>
                             </div>
                         </div>
                     </div>

@@ -8,17 +8,16 @@ const About = ({ children, props }) => {
                 <div className='hero--content content--width'>
                     <div className='section--header'>
                         {children}
-                        <h1>
-                        Introduce    font-size: 78px;
-    letter-spacing: -0.2px;
-    line-height: 90px;
-    margin-bottom: 43px;
-    font-weight: 300;                            Introduce    font-size: 78px;
-    letter-spacing: -0.2px;
-    line-height: 90px;
-    margin-bottom: 43px;
-    font-weight: 300;
-                        </h1>
+                        <div>
+                            <div className='about--header'>
+                                <h2>
+                                    Mon Voyage en <span>Développement</span> Web
+                                </h2>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ad ducimus voluptas vitae aliquam labore accusantium sapiente fugiat id eos rem illo assumenda nihil explicabo dicta molestias quidem doloribus exercitationem totam adipisci modi veritatis inventore eum reprehenderit! Provident, vero delectus facilis aliquid quis excepturi voluptas sed cumque quia voluptatibus repudiandae atque dolor, reiciendis fugit laboriosam, quidem nihil. Esse perferendis quaerat dolorem mollitia tempora ipsam autem aliquid natus officiis sint neque possimus repellendus harum aut consequatur quibusdam ducimus minima, corporis repellat!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

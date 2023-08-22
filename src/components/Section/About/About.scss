@@ -1,4 +1,18 @@
+@use '../../../styles/var.scss';
+
 .hero--content {
     position: relative;
     z-index: 3;
+    .about--header {
+        h2 {
+            font-size: 48px;
+            margin-bottom: 2rem;
+            span {
+                color: var.$green;
+            }
+        }
+    }
+    p {
+        font-size: 24px;
+    }
 }

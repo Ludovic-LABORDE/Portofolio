@@ -1,0 +1,30 @@
+@use '../../styles/var.scss';
+
+.btn--contact {
+    background: var.$green;
+    color: #000000;
+    display: block;
+    text-align: center;
+    padding: 11px 58px 10px 58px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    text-transform: uppercase;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+    border: 2px solid var.$green;
+
+    i {
+        font-size: 24px;
+        margin-right: 10px;
+        display: block;
+        margin-bottom: 3px;
+    }
+}
+
+.btn--contact:hover {
+    background: none;
+    color: var.$green;
+}

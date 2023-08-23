@@ -13,7 +13,6 @@ const useActiveScroll = (props) => {
         };
 
         const callback = (entries, observer, event) => {
-            console.log(observer)
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     let i = document.querySelectorAll('.link--section')
@@ -25,19 +24,16 @@ const useActiveScroll = (props) => {
                         entry.target.id === path && 
                         index.classList.add('active')
                     }) 
-                    // console.log(entry.target.id)
 
                 }
                 else{
                     let i = document.querySelectorAll('.link--section')
-                    // let j = document.querySelector(`#${entry.target.id}`)
-                    // j.classList.remove('active')
+
                     i.forEach((index) => {
                        let path = index.href.split('#')[1]
                        entry.target.id === path && 
                        index.classList.remove('active')
                    }) 
-                   console.log(entry.target.id)
                 }
             });
         };

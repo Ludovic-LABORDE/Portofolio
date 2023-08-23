@@ -1,5 +1,6 @@
 import Avatar from '@mui/joy/Avatar';
 import { Social } from './Social';
+import { FakeButton } from '../Button/Button';
 import photo from '../../assets/image/pro-photo4.png'
 import './Card.scss'
 
@@ -25,10 +26,7 @@ const BioCard = () => {
           )
         })}
       </ul>
-      <a className="btn--contact" href="#contact">
-        <i className="las la-envelope"></i>
-        CONTACT ME
-      </a>
+        <FakeButton />
     </div>
   )
 }

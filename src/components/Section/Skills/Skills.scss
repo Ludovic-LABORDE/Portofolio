@@ -1,0 +1,46 @@
+@use '../../../styles/var.scss';
+
+.skills--header {
+    margin-bottom: 50px;
+    h2 {
+        font-size: 48px;
+        margin-bottom: 2rem;
+    }
+    span {
+        color: var.$green;
+    }
+}
+.skills--content {
+    .skills--inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 2px solid #565656;
+        border-radius: 100px;
+        padding: 54px 0 48px 0;
+        margin-bottom: 20px;
+        transition: .3s;
+        padding-bottom: 5em;
+        margin: auto;
+        .skills--box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 15px;
+
+            img {
+                margin: auto;
+            }
+            h3{
+                font-size: 32px;
+                margin: 30px 0;;
+                color: var.$green;
+            }
+            p {
+                font-size: 16px;
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+    }
+}

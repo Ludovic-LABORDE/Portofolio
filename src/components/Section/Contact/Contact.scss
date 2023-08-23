@@ -1,0 +1,11 @@
+@use '../../../styles/var.scss';
+
+.contact--header {
+    h2 {
+        font-size: 48px;
+        margin-bottom: 2rem;
+    }
+    span {
+        color: var.$green;
+    }
+}

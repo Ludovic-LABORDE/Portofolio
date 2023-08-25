@@ -3,24 +3,16 @@ import '../Section.scss'
 import './Contact.scss'
 import { ButtonSubmit } from '../../Button/Button'
 import { Input } from './Input'
+import { sendFeedback } from '../../../function/functions'
 
 const Contact = ({ children, props }) => {
 
     const { register, handleSubmit, reset } = useForm();
+
     const onSubmit = (data) => {
-        console.log(data);
         const templateID = import.meta.env.VITE_TEMPLATE_ID;
         const serviceID = import.meta.env.VITE_SERVICE_ID;
-        console.log(templateID)
-
-        const sendFeedback = (serviceID, templateID, variables) => {
-            emailjs
-                .send(serviceID, templateID, variables, import.meta.env.VITE_PUBLIC_KEY)
-                .then((res) => {
-                    console.log(res);
-                })
-                .catch((err) => console.log(err));
-        };
+        
         sendFeedback(serviceID, templateID, {
             name: data.name,
             phone: data.phone,

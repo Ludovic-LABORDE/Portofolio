@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setActiveBackground } from "../../store/reducers/dataReducer";
 import Section from "../../components/Section/Section";
 import './Main.scss'
+import BioCard from "../../components/Card/Card";
 
 
 const Main = () => {
@@ -14,6 +15,7 @@ const Main = () => {
         <>
 
             <main className='wrapper--main'>
+                <BioCard />
                 {Title.map((index) => {
                     return (
                         <Section key={index.id}>

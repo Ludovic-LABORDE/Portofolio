@@ -19,13 +19,14 @@ section {
             }
         }
     }
+
     .reveal {
         position: relative;
         transform: translateY(150px);
         opacity: 0;
         transition: 1s all ease;
     }
-    
+
     .reveal.active {
         transform: translateY(0);
         opacity: 1;
@@ -33,12 +34,54 @@ section {
 
 }
 
-
-
 h1 {
     font-size: 64px;
     letter-spacing: -0.2px;
     line-height: 90px;
     margin-bottom: 43px;
     font-weight: 300;
+}
+
+@media screen and (max-width: 1380px) {
+    section {
+        .custom--container {
+            display: flex;
+            justify-self: center;
+            max-width: 750px;
+
+            .skills--header {
+
+                h2,
+                span {
+                    font-size: 38px;
+                    line-height: 1.4;
+                }
+            }
+
+            .content--width {
+                margin-left: 0;
+
+            }
+        }
+
+        .hero--content {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 585px) {
+    section {
+
+        .project--header,
+        .skills--header,
+        .contact--header,
+        .resume--header,
+        .about--header {
+            h2{
+                font-size: 38px !important;
+                line-height: 1.4 !important;
+            }
+        }
+    }
 }

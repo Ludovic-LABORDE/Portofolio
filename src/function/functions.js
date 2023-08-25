@@ -18,4 +18,11 @@ export const handleAnchorClick = (event, section) => {
     }
 };
 
-// export const 
+export const sendFeedback = (serviceID, templateID, variables) => {
+    emailjs
+        .send(serviceID, templateID, variables, import.meta.env.VITE_PUBLIC_KEY)
+        .then((res) => {
+            console.log(res);
+        })
+        .catch((err) => console.log(err));
+};

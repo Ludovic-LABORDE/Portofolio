@@ -89,3 +89,17 @@
         }
     }
 }
+@media screen and (max-width: 788px) {
+    .contact--content {
+        form {
+            width: 100%;
+            flex-direction: column;
+            .box--input {
+                width: 100%;
+            }
+            .box--input:nth-child(2n) {
+                margin-left: 0;
+            }
+        }
+    }
+}

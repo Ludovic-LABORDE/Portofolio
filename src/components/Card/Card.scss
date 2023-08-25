@@ -101,6 +101,23 @@
             }
         }
     }
-
-
+}
+@media screen and (max-width: 1380px) {
+    .sidebar {
+        position: relative;
+        max-width: 667px;
+        left: 0;
+        margin: auto;
+        top: 0;
+        transform: translateY(0);
+        margin-top: 20px;
+        .avatar {
+            width: 200px;
+            height: 200px;
+        }
+        .btn--contact {
+            width: 80%;
+        }
+    }
+    
 }

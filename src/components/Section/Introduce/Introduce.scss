@@ -65,10 +65,12 @@
                 justify-content: center;
                 gap: 100px;
                 margin-top: 200px;
+
                 div {
                     display: flex;
                     flex-direction: column;
                     width: min-content;
+
                     h2 {
                         display: inline;
                         font-size: 72px;
@@ -78,7 +80,7 @@
                         letter-spacing: -0.2px;
                         font-weight: 300;
                     }
-    
+
                     p {
                         display: inline;
                         font-size: 24px;
@@ -103,5 +105,45 @@
 
     to {
         top: 0px;
+    }
+}
+
+@media screen and (max-width: 788px) {
+    .first--section {
+        .custom--container {
+            .hero--content {
+                .hero--header {
+                    h1 {
+                        font-size: 58px;
+                        line-height: 1.3;
+                    }
+                }
+                .hero--content--text {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                .hero--footer {
+                    flex-direction: column-reverse;
+
+                    .hero--exp {
+                        margin-top: 60px;
+                        margin-left: 20px;
+                        
+                        justify-content: flex-start;
+                        h2 {
+                            font-size: 62px;
+                        }
+                        p {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+
+                    }
+                    .project--btn {
+
+                    }
+                }
+            }
+        }
     }
 }

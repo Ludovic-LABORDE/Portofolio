@@ -8,7 +8,7 @@ const About = ({ children, props }) => {
                 <div className='hero--content content--width'>
                     <div className='section--header'>
                         {children}
-                        <div>
+                        <div className='about--content'>
                             <div className='about--header'>
                                 <h2>
                                     Mon Voyage en <span>Développement</span> Web

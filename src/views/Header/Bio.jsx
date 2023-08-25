@@ -6,12 +6,13 @@ import './Header.scss';
 
 const Header = () => {
     return (
-        <>
+        <div className="smooth--wrapper">
+
             <BioCard />
             <BurgerIcon />
             <NavbarDesktop />
             <NavbarMobile />
-        </>
+        </div>
     )
 }
 

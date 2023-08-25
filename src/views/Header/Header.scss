@@ -1,5 +1,12 @@
-// .custom--container {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 100%;
-// }
+.smooth--wrapper {
+
+}
+
+@media screen and (max-width: 1380px){  
+    .smooth--wrapper {
+        .sidebar {
+
+            display: none;
+        }
+    }
+}

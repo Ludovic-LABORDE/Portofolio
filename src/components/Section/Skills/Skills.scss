@@ -44,3 +44,16 @@
         }
     }
 }
+@media screen and (max-width: 585px) {
+
+    .skills--content {
+        .skills--inner {
+            .skills--box {
+                width: 40%;
+            }
+            .skills--box:nth-child(-n+2) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}

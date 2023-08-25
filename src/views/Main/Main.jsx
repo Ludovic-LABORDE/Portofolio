@@ -1,5 +1,5 @@
 import { Title } from "../../components/Section/Section-name/section-title";
-import { useState } from "react";
+import { switchProjectLeft, switchProjectRight } from "../../store/reducers/caroussel";
 import { useSelector, useDispatch } from "react-redux";
 import { setActiveBackground } from "../../store/reducers/dataReducer";
 import Section from "../../components/Section/Section";
@@ -9,8 +9,9 @@ import BioCard from "../../components/Card/Card";
 
 const Main = () => {
     const active = useSelector(state => state.data.activeBackgound)
+    const { name, description, picture } = useSelector(state => state.caroussel.project)
+
     const dispatch = useDispatch();
-    // const [isTurn, setIsTurn] = useState(false)
     return (
         <>
 
@@ -33,9 +34,15 @@ const Main = () => {
                         </div>
                         <div className='img--content'>
                             <div className='img--content--inner'>
-                                <img src="https://dummyimage.com/800x400/fff/aaa" />
-                                {/* <i class="las la-angle-up info"></i> */}
-                                <i class="las la-times cross" onClick={() => dispatch(setActiveBackground(false))}></i>
+                                <img src={picture} >
+                                    <i className="las la-angle-left" onClick={() => dispatch(switchProjectLeft())}></i>
+                                    <i className="las la-angle-right" onClick={() => dispatch(switchProjectRight())}></i>
+                                </img>
+                                <div className='cosmokids--box'>
+                                    <h3>{name}</h3>
+                                    <p>{description}</p>
+                                </div>
+                                <i className="las la-times cross" alt="cross" onClick={() => dispatch(setActiveBackground(false))}></i>
                             </div>
                         </div>
                     </div>

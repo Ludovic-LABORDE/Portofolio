@@ -22,6 +22,7 @@ const Project = ({ children, props }) => {
                             <div className='project--content--cosmokids'>
                                 <div className='cosmokids--content' onClick={() => dispatch(setActiveBackground(true))}>
                                     <img src="https://dummyimage.com/800x400/000/aaa"/>
+
                                     <ul>
                                         <li><a href='#'>React-JS</a></li>
                                         <li><a href='#'>Larevel/PHP</a></li>

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Project } from "../../components/Section/Project/Project";
+import { Project } from "../../components/Section/Project/project";
 const initialState = {
     position: 1,
     project: Project[0]

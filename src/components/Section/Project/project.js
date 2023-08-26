@@ -3,7 +3,7 @@ export const Project = [
         id: 1,
         name: 'CosmoKids',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore vitae veritatis tempora! Nam, harum possimus porro laborum doloremque impedit quam quis.',
-        picture: 'https://dummyimage.com/800x400/fff/aaa'
+        picture: 'https://dummyimage.com/800x400/000/aaa'
     },
     {
         id: 2,
@@ -15,6 +15,6 @@ export const Project = [
         id: 3,
         name: 'Rezort',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore vitae veritatis tempora! Nam, harum possimus porro laborum doloremque impedit quam quis.',
-        picture: 'https://dummyimage.com/800x400/fff/aaa'
+        picture: 'https://dummyimage.com/800x400/888/aaa'
     },
 ]

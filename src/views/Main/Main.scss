@@ -53,26 +53,39 @@
             }
 
             .cosmokids--box {
-
-                opacity: 1;
                 transform: translateY(0px);
+                opacity: 0;
+                &.visible {
+                    opacity: 1;
+                    animation: fadein 1.2s;
+
+                }
             }
-            .la-angle-left{
-                transition: .3s;
-                display: block;
-                z-index: 9999;
-                top: 250px;
-                position: absolute;
-                color: #ffffff;
-            }
-            .la-angle-right{
-                transition: .3s;
-                display: block;
-                z-index: 9999;
-                top: 250px;
-                right: 0;
-                position: absolute;
-                color: #ffffff;
+
+            .img--content--inner {
+                position: relative;
+
+                .la-angle-left {
+                    animation: fadein 1.2s;
+                    display: block;
+                    z-index: 9999;
+                    top: 49%;
+                    position: absolute;
+                    color: #ffffff;
+                    opacity: 1;
+
+                }
+
+                .la-angle-right {
+                    animation: fadein 1.2s;
+                    display: block;
+                    z-index: 9999;
+                    top: 49%;
+                    right: 0;
+                    position: absolute;
+                    color: #ffffff;
+                    opacity: 1;
+                }
             }
         }
 
@@ -99,6 +112,7 @@
             transform: translateY(30px);
             transition: 0.5s;
 
+
             h3 {
                 margin-top: 20px;
             }
@@ -109,14 +123,20 @@
                 margin-top: 8px;
             }
         }
-        .la-angle-left, .la-angle-right {
+
+        .la-angle-left,
+        .la-angle-right {
             display: none;
             cursor: pointer;
             font-size: 200%;
-            &:hover{
+            opacity: 0;
+
+            &:hover {
                 opacity: .7;
+
             }
         }
+
         .cross {
             z-index: 9999;
             position: absolute;
@@ -131,6 +151,13 @@
             z-index: 999;
             cursor: pointer;
             border-radius: 20px;
+            opacity: 0;
+
+            &.visible {
+                opacity: 1;
+                animation: fadein 1.2s;
+
+            }
         }
     }
 
@@ -152,3 +179,38 @@
         }
     }
 }
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+// @-moz-keyframes fadein { /* sur Firefox */
+//     from {
+//         opacity:0;
+//     }
+//     to {
+//         opacity:1;
+//     }
+// }
+// @-webkit-keyframes fadein { /* sur Safari et Chrome */
+//     from {
+//         opacity:0;
+//     }
+//     to {
+//         opacity:1;
+//     }
+// }
+// @-o-keyframes fadein { /* sur Opera */
+//     from {
+//         opacity:0;
+//     }
+//     to {
+//         opacity: 1;
+//     }
+// }

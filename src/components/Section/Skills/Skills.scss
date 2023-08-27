@@ -14,26 +14,31 @@
     .skills--inner {
         display: flex;
         flex-wrap: wrap;
+        max-width: 500px;
         justify-content: space-around;
         border: 2px solid #565656;
         border-radius: 100px;
-        padding: 54px 0 48px 0;
+        padding: 60px 30px;
         margin-bottom: 20px;
         transition: .3s;
-        padding-bottom: 5em;
-        margin: auto;
+
         .skills--box {
             display: flex;
             align-items: center;
             flex-direction: column;
-            padding-left: 15px;
-
+            width: 30%;
+            margin-bottom: 35px;
             img {
                 margin: auto;
+                cursor: pointer;
+                &:hover {
+                    transition: .3s;
+                    opacity: .5;
+                }
             }
             h3{
                 font-size: 32px;
-                margin: 30px 0;;
+                margin: 10px 0;;
                 color: var.$green;
             }
             p {
@@ -42,7 +47,16 @@
                 font-weight: 400;
             }
         }
-    }
+        .skills--box:nth-child(4) {
+            margin-bottom: 0;
+        }
+        .skills--box:nth-child(5) {
+            margin-bottom: 0;
+        }
+        .skills--box:last-child {
+            margin-bottom: 0;
+        }
+    }   
 }
 @media screen and (max-width: 585px) {
 
@@ -51,7 +65,7 @@
             .skills--box {
                 width: 40%;
             }
-            .skills--box:nth-child(-n+2) {
+            .skills--box:nth-child(4) {
                 margin-bottom: 35px;
             }
         }

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ludovic-laborde.github.io/Portofolio/",
   "name": "portofolio",
   "private": true,
   "version": "0.0.0",
@@ -17,6 +18,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/joy": "^5.0.0-beta.0",
     "@reduxjs/toolkit": "^1.9.5",
+    "deploy-react": "^2.2.11",
     "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

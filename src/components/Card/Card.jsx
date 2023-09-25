@@ -1,7 +1,7 @@
 import Avatar from '@mui/joy/Avatar';
 import { Social } from './Social';
 import { FakeButton } from '../Button/Button';
-import photo from '../../assets/image/pro-photo4.png'
+import photo from '../../../public/static/images/pro-photo4.png'
 import './Card.scss'
 
 const BioCard = () => {

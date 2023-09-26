@@ -2,19 +2,20 @@ export const Project = [
     {
         id: 1,
         name: 'CosmoKids',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore vitae veritatis tempora! Nam, harum possimus porro laborum doloremque impedit quam quis.',
-        picture: 'https://dummyimage.com/800x400/000/aaa'
+        description: 'A web application where childrens can learn astronomy through fun and interactive content.',
+        picture: '../../../../public/static/images/cosmokids/Mockup-application-800x400.png'
     },
     {
         id: 2,
-        name: 'Algan',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore vitae veritatis tempora! Nam, harum possimus porro laborum doloremque impedit quam quis.',
-        picture: 'https://dummyimage.com/800x400/fff/aaa'
+
+        name: 'Landing page',
+        description: "With NASA's API, every visit to the site welcomes an image of the cosmos and its history.",
+        picture: '../../../../public/static/images/cosmokids/Landing.png'
     },
     {
         id: 3,
-        name: 'Rezort',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore vitae veritatis tempora! Nam, harum possimus porro laborum doloremque impedit quam quis.',
-        picture: 'https://dummyimage.com/800x400/888/aaa'
+        name: 'Quiz',
+        description: 'On the theme of space, this quiz is linked to several lessons on the project.',
+        picture: '../../../../public/static/images/cosmokids/Quizz.png'
     },
 ]

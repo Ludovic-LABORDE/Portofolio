@@ -1,3 +1,4 @@
+import { Redirect } from '../../../function/functions';
 import '../Section.scss'
 import './Introduce.scss'
 
@@ -26,7 +27,7 @@ const Introduce = ({ children, props }) => {
                                 <p>PROJECTS COMPLETED</p>
                             </div>
                         </div>
-                            <a className='project--btn' href='#Project'>
+                            <a className='project--btn' onClick={(event) => Redirect(event, "#Project")}>
                                 <span >My Project</span>
                                 <i className='las la-arrow-down'></i>
                             </a>

@@ -11,17 +11,25 @@ const About = ({ children, props }) => {
                         <div className='about--content'>
                             <div className='about--header'>
                                 <h2>
-                                    Mon Voyage en <span>Développement</span> Web
+                                    My background in web <span>development </span>
                                 </h2>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ad ducimus voluptas vitae aliquam labore accusantium sapiente fugiat id eos rem illo assumenda nihil explicabo dicta molestias quidem doloribus exercitationem totam adipisci modi veritatis inventore eum reprehenderit! Provident, vero delectus facilis aliquid quis excepturi voluptas sed cumque quia voluptatibus repudiandae atque dolor, reiciendis fugit laboriosam, quidem nihil. Esse perferendis quaerat dolorem mollitia tempora ipsam autem aliquid natus officiis sint neque possimus repellendus harum aut consequatur quibusdam ducimus minima, corporis repellat!
+                                I've been drawn to computers since childhood and have always been curious about what lies behind computer programmes and how computers work.
+                            </p>
+                            <br />
+                            <p>
+                                My ascent began over a year ago, when I started learning the basics of web development. I then took a course specialising in the front-end of websites.
+                            </p>
+                            <br />
+                            <p>
+                                After this training, which enriched me a lot, I'm constantly learning new things while perfecting the skills I've already acquired.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

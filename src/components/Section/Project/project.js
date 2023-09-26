@@ -7,14 +7,15 @@ export const Project = [
     },
     {
         id: 2,
-        name: 'Quiz',
-        description: '',
-        picture: '../../../../public/static/images/cosmokids/Quizz.png'
+
+        name: 'Landing page',
+        description: "With NASA's API, every visit to the site welcomes an image of the cosmos and its history.",
+        picture: '../../../../public/static/images/cosmokids/Landing.png'
     },
     {
         id: 3,
-        name: 'Rezort',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore vitae veritatis tempora! Nam, harum possimus porro laborum doloremque impedit quam quis.',
-        picture: 'https://dummyimage.com/800x400/888/aaa'
+        name: 'Quiz',
+        description: 'On the theme of space, this quiz is linked to several lessons on the project.',
+        picture: '../../../../public/static/images/cosmokids/Quizz.png'
     },
 ]

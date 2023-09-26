@@ -21,7 +21,6 @@
             margin-bottom: 30px;
             height: 410px;
             cursor: pointer;
-
             img {
                 display: block;
                 width: 100%;
@@ -35,9 +34,9 @@
             }
 
             img:hover {
-                -ms-transform: scale(1.5);
-                -webkit-transform: scale(1.5);
-                transform: scale(1.5);
+                -ms-transform: scale(1.3);
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
                 transition: .5s;
             }
 

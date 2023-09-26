@@ -26,7 +26,7 @@ const BioCard = () => {
           )
         })}
       </ul>
-        <FakeButton />
+        <FakeButton href="#Contact" />
     </div>
   )
 }

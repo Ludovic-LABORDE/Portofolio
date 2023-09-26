@@ -5,10 +5,15 @@ import Skills from "./Skills/Skills";
 import Resume from "./Resume/Resume";
 import Contact from "./Contact/Contact";
 import Project from "./Project/Project";
-import useActiveScroll from "../../hook/useActiveScroll";
+import {useActiveScroll} from "../../hook/useActiveScroll";
 
 const Section = ({ children }) => {
     const anchorRef = useActiveScroll(children.props.children[1]);
+    // console.log(window.innerHeight / 2)
+    // let p = document.querySelector("#About")
+    // let t = p.getBoundingClientRect();
+    // useScroll()
+    // console.log(t)
     return (
         <>
             {children.key == 1 ? <Introduce children={children} props={anchorRef} /> : ''}

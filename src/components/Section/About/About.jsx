@@ -24,5 +24,5 @@ const About = ({ children, props }) => {
         </section>
     )
 }
-
+ 
 export default About;

@@ -8,6 +8,7 @@ export const handleAnchorClick = (event, section) => {
     });
     const allAnchor = document.querySelectorAll('.nav--responsive a');
     allAnchor.forEach(anchor => {
+        console.log(anchor)
         anchor.classList.remove('active');
     });
 
@@ -26,3 +27,9 @@ export const sendFeedback = (serviceID, templateID, variables) => {
         })
         .catch((err) => console.log(err));
 };
+export const Redirect = (event, href) => {
+    event.preventDefault();
+    let element = document.querySelector(href);
+    element.scrollIntoView({ behavior: 'smooth',  block: "start"});
+
+}

@@ -1,8 +1,9 @@
 import './Button.scss'
+import { Redirect } from '../../function/functions'
 
-export const FakeButton = () => {
+export const FakeButton = ({href}) => {
     return (
-        <a className="btn--contact" href="#Contact">
+        <a className="btn--contact" onClick={(event) => Redirect(event, href)}>
             <i className="las la-envelope"></i>
             CONTACT ME
         </a>
@@ -16,4 +17,4 @@ export const ButtonSubmit = () => {
             SEND MESSAGE
         </button>
     )
-}
+} 

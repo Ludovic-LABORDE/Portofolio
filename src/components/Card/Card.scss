@@ -101,6 +101,11 @@
             }
         }
     }
+    .btn--contact {
+        &:hover {
+             background-color: var.$primary;
+        }
+    }
 }
 @media screen and (max-width: 1380px) {
     .sidebar {

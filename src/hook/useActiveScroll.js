@@ -13,11 +13,6 @@ export const useActiveScroll = (props) => {
         };
 
         const callback = (entries, observer, event) => {
-            const ArrayRatio = [];
-            ArrayRatio.push(entries[0].intersectionRatio)
-            const maxRatio = Math.max.apply(null, ArrayRatio);
-
-            console.log(maxRatio);
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     let i = document.querySelectorAll('.link--section')

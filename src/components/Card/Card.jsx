@@ -7,6 +7,7 @@ import './Card.scss'
 const BioCard = () => {
   return (
     <div className="sidebar">
+      
       <div  className="sidebar--header">
         <div className="sidebar--status"><span>Web</span><span>Developer</span></div>
         <i className="las la-code"></i>

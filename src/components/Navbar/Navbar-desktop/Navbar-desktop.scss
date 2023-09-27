@@ -75,6 +75,12 @@
         }
     }
 }
+.btn--langage{
+    position: fixed;
+    left: 40px;
+    top: 40px;
+}
+
 @media screen and (max-width: 1380px) {
     .desktop--menu {
         display: none;

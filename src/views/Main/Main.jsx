@@ -3,6 +3,7 @@ import { switchProjectLeft, switchProjectRight } from "../../store/reducers/caro
 import { useSelector, useDispatch } from "react-redux";
 import { setActiveBackground } from "../../store/reducers/dataReducer";
 import Section from "../../components/Section/Section";
+
 import './Main.scss'
 import BioCard from "../../components/Card/Card";
 import { useEffect, useState } from "react";

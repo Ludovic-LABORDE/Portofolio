@@ -1,7 +1,13 @@
+import { useSelector } from 'react-redux'
+import { language } from '../../../../lang/language'
 import '../Section.scss'
 import './Resume.scss'
 
 const Resume = ({ children, props }) => {
+    const lang = useSelector(state => state.data.langage);
+    const resume = language[lang].Section.Resume
+    const web = resume.web
+    const operator = resume.operator
     return (
         <section id='Resume' ref={props}>
             <div className='custom--container reveal'>
@@ -9,32 +15,30 @@ const Resume = ({ children, props }) => {
                     <div className='section--header'>
                         {children}
                         <div className='resume--header'>
-                            <h2>
-                                Education & <span>Experience</span>
-                            </h2>
+                            <h2>{resume.title}<span>{resume.secondTitle}</span></h2>
                         </div>
                         <div className='resume--detail'>
-                            <span className='date'>2023 - Present</span>
-                            <h3>Web Developer & Web Mobile</h3>
-                            <p>Final Training Project at O'clock</p>
+                            <span className='date'>{web.firstDate}</span>
+                            <h3>{web.firstTitle}</h3>
+                            <p>{web.firstSubtitle}</p>
                             <ul>
-                                <li>Git Master / Front-end Developer React-JS</li>
-                                <li>Collaborative Web Application Development, from Conceptualization to MVP Deployment using Agile Methodology.</li>
+                                <li>{web.firstRole}</li>
+                                <li>{web.firstText}</li>
                             </ul>
-                            <p>O'clock school</p>
+                            <p>{web.secondSubtitle}</p>
                             <ul>
-                                <li>Complete Web Developer Training Programs: 798 Hours</li>
-                                <li>3 month foundational period: HTML5/CSS3/JavaScript/PHP/MySQL</li>
-                                <li>1 month of specialization: React-JS</li>
+                                <li>{web.secondTraining}</li>
+                                <li>{web.secondSkills}</li>
+                                <li>{web.secondSpe}</li>
                             </ul>
                         </div>
                         <div className='resume--detail'>
-                            <span className='date'>2022 - 2023</span>
-                            <h3>Production Operator & Multifunctional Agent</h3>
-                            <p>‌Eviosys Packaging France</p>
+                            <span className='date'>{operator.firstDate}</span>
+                            <h3>{operator.firstTitle}</h3>
+                            <p>{operator.firstSubtitle}</p>
                             <ul>
-                                <li>Prepare for production and execution of necessary adjustments</li>
-                                <li>Carry out preventive and corrective maintenance interventions</li>
+                                <li>{operator.firstRole}</li>
+                                <li>{operator.firstText}</li>
                             </ul>
                         </div>
                     </div>

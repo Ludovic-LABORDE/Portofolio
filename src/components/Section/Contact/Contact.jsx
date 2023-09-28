@@ -1,18 +1,21 @@
-import { useForm } from 'react-hook-form'
 import '../Section.scss'
 import './Contact.scss'
+import { useForm } from 'react-hook-form'
 import { ButtonSubmit } from '../../Button/Button'
-import { Input } from './Input'
 import { sendFeedback } from '../../../function/functions'
+import { useSelector } from 'react-redux'
+import { language } from '../../../../lang/language'
 
 const Contact = ({ children, props }) => {
-
+    const lang = useSelector(state => state.data.langage)
+    const contact = language[lang].Section.Contact
+    const input = contact.input
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = (data) => {
         const templateID = import.meta.env.VITE_TEMPLATE_ID;
         const serviceID = import.meta.env.VITE_SERVICE_ID;
-        
+
         sendFeedback(serviceID, templateID, {
             name: data.name,
             phone: data.phone,
@@ -30,13 +33,11 @@ const Contact = ({ children, props }) => {
                     <div className='section--header'>
                         {children}
                         <div className='contact--header'>
-                            <h2>
-                                Let's Work <span>Together!</span>
-                            </h2>
+                            <h2>{contact.title} <span>{contact.secondTitle}</span></h2>
                         </div>
                         <div className='contact--content'>
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                {Input.map(({ name, placeholder, required, label, id, type }) => {
+                                {input.map(({ name, placeholder, required, label, id, type }) => {
 
                                     return (
                                         <div className='box--input' key={id}>
@@ -52,10 +53,10 @@ const Contact = ({ children, props }) => {
                                 })}
                                 <div className='box--inputMessage'>
 
-                                    <label>MESSAGE <span>*</span></label>
+                                    <label>{contact.textarea.label}<span>*</span></label>
                                     <textarea
                                         className='contact--inputMessage'
-                                        placeholder='Your message'
+                                        placeholder={contact.textarea.placeholder}
                                         type='text'
                                         {...register('message')}
                                     />

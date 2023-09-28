@@ -15,7 +15,7 @@ export const Project = [
     {
         id: 3,
         name: 'Quiz',
-        description: 'On the theme of space, this quiz is linked to several lessons on the project.',
+        description: 'This quiz is linked to several lessons on the project.',
         picture: 'static/images/cosmokids/Quizz.png'
     },
 ]

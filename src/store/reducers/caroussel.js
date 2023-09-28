@@ -1,5 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Project } from "../../components/Section/Project/project";
+import { language } from "../../../lang/language";
+
+const  Project = language['en'].Section.Project.Cosmokids.Inner
+
 const initialState = {
     position: 1,
     project: Project[0]

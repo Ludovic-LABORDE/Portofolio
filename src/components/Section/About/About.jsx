@@ -1,7 +1,11 @@
 import '../Section.scss'
 import './About.scss'
+import { useSelector } from 'react-redux'
+import { language } from '../../../../lang/language'
 
 const About = ({ children, props }) => {
+    const lang = useSelector(state => state.data.langage);
+    const about = language[lang].Section.About
     return (
         <section id='About' ref={props}>
             <div className='custom--container reveal'>
@@ -9,22 +13,12 @@ const About = ({ children, props }) => {
                     <div className='section--header'>
                         {children}
                         <div className='about--content'>
-                            <div className='about--header'>
-                                <h2>
-                                    My background in web <span>development </span>
-                                </h2>
-                            </div>
-                            <p>
-                                I've been drawn to computers since childhood and have always been curious about what lies behind computer programmes and how computers work.
-                            </p>
+                            <div className='about--header'><h2>{about.title} <span>{about.secondTitle}</span></h2></div>
+                            <p>{about.firstText}</p>
                             <br />
-                            <p>
-                                My ascent began over a year ago, when I started learning the basics of web development. I then took a course specialising in the front-end of websites.
-                            </p>
+                            <p>{about.secondText}</p>
                             <br />
-                            <p>
-                                After this training, which enriched me a lot, I'm constantly learning new things while perfecting the skills I've already acquired.
-                            </p>
+                            <p>{about.thirdText}</p>
                         </div>
                     </div>
                 </div>

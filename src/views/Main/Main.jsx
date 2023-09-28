@@ -1,9 +1,8 @@
-import { Title } from "../../components/Section/Section-name/section-title";
 import { switchProjectLeft, switchProjectRight } from "../../store/reducers/caroussel";
 import { useSelector, useDispatch } from "react-redux";
 import { setActiveBackground } from "../../store/reducers/dataReducer";
 import Section from "../../components/Section/Section";
-
+import { language } from "../../../lang/language";
 import './Main.scss'
 import BioCard from "../../components/Card/Card";
 import { useEffect, useState } from "react";
@@ -14,6 +13,8 @@ const Main = () => {
     const [imageVisible, setImageVisible] = useState(true);
     const active = useSelector(state => state.data.activeBackgound)
     const { project, position } = useSelector(state => state.caroussel)
+    const lang = useSelector(state => state.data.langage)
+    const Title = language[lang].Section.TitleSection
     const { name, description, picture } = project
     const dispatch = useDispatch();
 

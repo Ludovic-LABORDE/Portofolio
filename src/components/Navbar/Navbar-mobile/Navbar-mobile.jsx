@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from '../Navbar.js';
+import { language } from '../../../../lang/language.js';
 import { Social } from '../../Card/Social.js';
 import { useSelector, useDispatch } from 'react-redux';
 import { setActiveMenu } from '../../../store/reducers/dataReducer.js';
@@ -7,7 +7,10 @@ import { handleAnchorClick } from '../../../function/functions';
 import './Navbar-mobile.scss';
 
 const NavbarMobile = () => {
+    const lang = useSelector(state => state.data.langage)
     const active = useSelector(state => state.data.activeMenu);
+    const navbar = language[lang].Navbar
+    const social = language[lang].Social.name
     const dispatch = useDispatch();
 
     return (
@@ -17,7 +20,7 @@ const NavbarMobile = () => {
                 <div className='mobile--menu--wrap'>
                     <p>Menu</p>
                     <ul className='nav--responsive'>
-                        {Navbar.map((index) => {
+                        {navbar.map((index) => {
                             return (
                                 <li key={index.id}>
                                     <a
@@ -34,7 +37,7 @@ const NavbarMobile = () => {
                     </ul>
                 </div>
                 <div className='mobile--menu--social'>
-                    <p>Social</p>
+                    <p>{social}</p>
                     <ul className='social--links'>
                         {Social.map((index) => {
                             return (

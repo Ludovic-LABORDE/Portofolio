@@ -8,7 +8,6 @@ export const handleAnchorClick = (event, section) => {
     });
     const allAnchor = document.querySelectorAll('.nav--responsive a');
     allAnchor.forEach(anchor => {
-        console.log(anchor)
         anchor.classList.remove('active');
     });
 

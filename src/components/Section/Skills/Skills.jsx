@@ -21,7 +21,7 @@ const Skills = ({ children, props }) => {
                             {skills.map((index) => {
                                 return (
                                     <div className="skills--box" key={index.id}>
-                                            <img src={index.image} style={{width: index.size + 'px'}}/>
+                                            <img src={index.image} alt={index.alt} style={{width: index.size + 'px'}}/>
                                             <h3>{index.value}</h3>
                                         <p>{index.name}</p>
                                     </div>

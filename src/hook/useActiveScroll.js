@@ -9,7 +9,7 @@ export const useActiveScroll = (props) => {
         const options = {
             root: null, // Utilisez la fenêtre comme conteneur par défaut
             rootMargin: '0px',
-            threshold: .64, // Configuration du scroll
+            threshold: .4, // Configuration du scroll
         };
 
         const callback = (entries, observer, event) => {

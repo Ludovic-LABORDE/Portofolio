@@ -9,9 +9,9 @@ const NavbarDesktop = () => {
     const navbar  = language[lang].Navbar
     return (
         <nav>
-            <ButtonLangage />
+            <ButtonLangage classname='desktop'/>
             <ul className="desktop--menu">
-                {navbar.map((index, event) => {
+                {navbar.map((index) => {
                     return (
                         <li key={index.id}>
                             <a

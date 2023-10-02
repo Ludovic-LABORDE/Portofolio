@@ -1,5 +1,7 @@
 import { useSelector } from 'react-redux'
 import { language } from '../../../../lang/language'
+import { ButtonDownload } from '../../Button/Button'
+
 import '../Section.scss'
 import './Resume.scss'
 
@@ -40,6 +42,9 @@ const Resume = ({ children, props }) => {
                                 <li>{operator.firstRole}</li>
                                 <li>{operator.firstText}</li>
                             </ul>
+                        </div>
+                        <div className='resume--button'>
+                            <ButtonDownload />
                         </div>
                     </div>
                 </div>

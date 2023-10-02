@@ -3,7 +3,8 @@ export const language = {
         Button: {
             FakeButton: "CONTACT ME",
             ButtonSubmit: "SEND MESSAGE",
-            ButtonProject: "My Projects"
+            ButtonProject: "My Projects",
+            ButtonDownload: "Download my cv"
         },
         Card: {
             firstStatus: "Web",
@@ -206,7 +207,8 @@ export const language = {
         Button: {
             FakeButton: "CONTACTEZ-MOI",
             ButtonSubmit: "ENVOYEZ MOI UN MESSAGE",
-            ButtonProject: "Mes projets"
+            ButtonProject: "Mes projets",
+            ButtonDownload: "Télécharger mon cv"
         },
         Card: {
             firstStatus: "Web",

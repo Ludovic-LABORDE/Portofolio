@@ -4,6 +4,7 @@ import { Social } from '../../Card/Social.js';
 import { useSelector, useDispatch } from 'react-redux';
 import { setActiveMenu } from '../../../store/reducers/dataReducer.js';
 import { handleAnchorClick } from '../../../function/functions';
+import { ButtonLangage } from '../../Button/Button.jsx';
 import './Navbar-mobile.scss';
 
 const NavbarMobile = () => {
@@ -15,8 +16,10 @@ const NavbarMobile = () => {
 
     return (
         <nav className={`mobile--menu ${active}`}>
+
             <div className='overlay' onClick={() => dispatch(setActiveMenu(''))}></div>
             <div className='mobile--menu--list'>
+                    <i className="las la-times" onClick={() => dispatch(setActiveMenu(''))}></i>
                 <div className='mobile--menu--wrap'>
                     <p>Menu</p>
                     <ul className='nav--responsive'>
@@ -34,6 +37,7 @@ const NavbarMobile = () => {
                                 </li>
                             );
                         })}
+                        <ButtonLangage classname='mobile' />
                     </ul>
                 </div>
                 <div className='mobile--menu--social'>

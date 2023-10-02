@@ -1,11 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { language } from "../../../lang/language";
 
-const  Project = language['en'].Section.Project.Cosmokids.Inner
+
 
 const initialState = {
     position: 1,
-    project: Project[0]
+    project: language['en'].Section.Project.Cosmokids.Inner[0],
+    langage: 'en'
 }
 
 const carousselSlice = createSlice({
@@ -13,20 +14,28 @@ const carousselSlice = createSlice({
     initialState: initialState,
     reducers: {
         switchProjectRight: (state, action) => {
-            state.position ===  Project.length ? state.position = 0 : "";
+            state.position === language[state.langage].Section.Project.Cosmokids.Inner.length ? state.position = 0 : "";
             state.position = state.position + 1;
-            state.project = Project[state.position - 1]
+            state.project = language[state.langage].Section.Project.Cosmokids.Inner[state.position - 1]
+
         },
         switchProjectLeft: (state, action) => {
-            state.position = state.position - 1  ;
+            state.position = state.position - 1;
             state.position <= 0 ? state.position = 3 : "";
-            state.project = Project[state.position - 1]
+            state.project = language[state.langage].Section.Project.Cosmokids.Inner[state.position - 1]
+        },
+        setLangageCaroussel: (state, action) => {
+            state.langage = '';
+            state.langage = action.payload;
+            state.project = language[state.langage].Section.Project.Cosmokids.Inner[0];
+
         }
     },
     // extraReducers: (builder) => {
     //     builder
+    //     });
     // },
 });
 
-export const { switchProjectRight, switchProjectLeft } = carousselSlice.actions;
+export const { switchProjectRight, switchProjectLeft, setLangageCaroussel } = carousselSlice.actions;
 export const carousselReducer = carousselSlice.reducer;

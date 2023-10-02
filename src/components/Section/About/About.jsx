@@ -20,6 +20,7 @@ const About = ({ children, props }) => {
                             <br />
                             <p>{about.thirdText}</p>
                         </div>
+
                     </div>
                 </div>
             </div>

@@ -141,7 +141,7 @@ export const language = {
                 text: '"Every line of code I write is an opportunity to create, innovate, and let my passion for development shape the digital future."',
                 numberExperience: "1+",
                 experience: "YEARS OF EXPERIENCE",
-                numberProject: "15+",
+                numberProject: "5+",
                 project: "PROJECTS COMPLETED",
             },
             Resume: {
@@ -181,19 +181,21 @@ export const language = {
                         {
                             id: 1,
                             name: 'CosmoKids',
+                            alt: "Mockup cosmokids",
                             description: 'A web application where childrens can learn astronomy through fun and interactive content.',
                             picture: 'static/images/cosmokids/Mockup-application-800x400.png'
                         },
                         {
                             id: 2,
-
                             name: 'Landing page',
+                            alt:"Landing page cosmokids",
                             description: "With NASA's API, every visit to the site welcomes an image of the cosmos and its history.",
                             picture: 'static/images/cosmokids/Landing.png'
                         },
                         {
                             id: 3,
                             name: 'Quiz',
+                            alt:"Quiz cosmokids",
                             description: 'This quiz is linked to several lessons on the project.',
                             picture: 'static/images/cosmokids/Quizz.png'
                         },
@@ -345,7 +347,7 @@ export const language = {
                 text: "''Chaque ligne de code que j'écris est une occasion de créer, d'innover et de laisser ma passion pour le développement façonner l'avenir numérique.''",
                 numberExperience: "1+",
                 experience: "ANNÉES D'EXPÉRIENCE",
-                numberProject: "15+",
+                numberProject: "5+",
                 project: "PROJETS ACHEVÉS",
             },
             Resume: {
@@ -385,19 +387,21 @@ export const language = {
                         {
                             id: 1,
                             name: 'CosmoKids',
+                            alt:"Mockup cosmokids",
                             description: "Une application web où les enfants peuvent apprendre l'astronomie grâce à un contenu amusant et interactif.",
                             picture: 'static/images/cosmokids/Mockup-application-800x400.png'
                         },
                         {
                             id: 2,
-
                             name: 'Landing page',
+                            alt:"Page d'attérissage cosmokids",
                             description: "Grâce à l'API de la NASA, chaque visite sur le site accueille une image du cosmos et de son histoire.",
                             picture: 'static/images/cosmokids/Landing.png'
                         },
                         {
                             id: 3,
                             name: 'Quiz',
+                            alt:"Quiz cosmokids",
                             description: 'Ce quiz est lié à plusieurs leçons sur le projet.',
                             picture: 'static/images/cosmokids/Quizz.png'
                         },

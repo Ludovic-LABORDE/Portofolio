@@ -15,7 +15,7 @@ const Main = () => {
     const { project, position } = useSelector(state => state.caroussel)
     const lang = useSelector(state => state.data.langage)
     const Title = language[lang].Section.TitleSection
-    const { name, description, picture } = project
+    const { name, description, picture, alt } = project
     const dispatch = useDispatch();
 
 
@@ -49,7 +49,7 @@ const Main = () => {
                         </div>
                         <div className="img--content">
                             <div className='img--content--inner'>
-                                <img src={picture} className={imageVisible ? "visible" : ""}/>
+                                <img src={picture} alt={alt} className={imageVisible ? "visible" : ""}/>
                                 <i className="las la-angle-left" onClick={() => dispatch(switchProjectLeft())}></i>
                                 <i className="las la-angle-right" onClick={() => dispatch(switchProjectRight())}></i>
                             </div>

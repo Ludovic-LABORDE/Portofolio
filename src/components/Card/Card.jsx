@@ -3,7 +3,7 @@ import { Social } from './Social';
 import { FakeButton } from '../Button/Button'
 import { language } from '../../../lang/language'; 
 import { useSelector } from 'react-redux';
-import photo from '../../../public/static/images/pro-photo4.png'
+import photo from '../../../public/static/images/Logo/ludovic-laborde-img.png'
 import './Card.scss'
 
 

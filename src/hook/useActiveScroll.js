@@ -54,18 +54,3 @@ export const useActiveScroll = (props) => {
 
     return anchorRef;
 };
-
-// export const useScroll = () => {
-//     const elmt = document.getElementById('#About');
-//     const rect = elmt.getBoundingClientRect();
-//     const moitieEcran = window.innerHeight / 2;
-  
-//     // Calculez la position verticale de l'élément par rapport au haut de la fenêtre
-//     const positionElement = rect.top;
-  
-//     // Si l'élément atteint la moitié de l'écran, faites quelque chose
-//     if (positionElement <= moitieEcran) {
-//       // Votre code ici
-//       console.log("L'élément est à la moitié de l'écran !");
-//     }
-// }

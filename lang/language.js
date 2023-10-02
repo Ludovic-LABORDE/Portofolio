@@ -221,7 +221,7 @@ export const language = {
             {
                 id: 1,
                 class: 'las la-home',
-                section: 'Introduction',
+                section: 'Introduce',
                 alt: 'Maison'
             },
             {
@@ -239,7 +239,7 @@ export const language = {
             {
                 id: 4,
                 class: 'las la-grip-vertical',
-                section: 'Projects',
+                section: 'Project',
                 alt: 'Projets'
             },
             {

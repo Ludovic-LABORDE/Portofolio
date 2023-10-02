@@ -1,8 +1,8 @@
-import { Title } from "../../components/Section/Section-name/section-title";
 import { switchProjectLeft, switchProjectRight } from "../../store/reducers/caroussel";
 import { useSelector, useDispatch } from "react-redux";
 import { setActiveBackground } from "../../store/reducers/dataReducer";
 import Section from "../../components/Section/Section";
+import { language } from "../../../lang/language";
 import './Main.scss'
 import BioCard from "../../components/Card/Card";
 import { useEffect, useState } from "react";
@@ -13,7 +13,9 @@ const Main = () => {
     const [imageVisible, setImageVisible] = useState(true);
     const active = useSelector(state => state.data.activeBackgound)
     const { project, position } = useSelector(state => state.caroussel)
-    const { name, description, picture } = project
+    const lang = useSelector(state => state.data.langage)
+    const Title = language[lang].Section.TitleSection
+    const { name, description, picture, alt } = project
     const dispatch = useDispatch();
 
 
@@ -47,7 +49,7 @@ const Main = () => {
                         </div>
                         <div className="img--content">
                             <div className='img--content--inner'>
-                                <img src={picture} className={imageVisible ? "visible" : ""}/>
+                                <img src={picture} alt={alt} className={imageVisible ? "visible" : ""}/>
                                 <i className="las la-angle-left" onClick={() => dispatch(switchProjectLeft())}></i>
                                 <i className="las la-angle-right" onClick={() => dispatch(switchProjectRight())}></i>
                             </div>

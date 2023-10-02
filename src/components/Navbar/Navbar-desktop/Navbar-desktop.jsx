@@ -1,13 +1,17 @@
 import React from 'react';
-import { Navbar } from '../Navbar';
+import { language } from '../../../../lang/language';
+import { useSelector } from 'react-redux';
 import { handleAnchorClick } from '../../../function/functions';
 import './Navbar-desktop.scss';
-
+import { ButtonLangage } from '../../Button/Button';
 const NavbarDesktop = () => {
+    const lang = useSelector(state => state.data.langage)
+    const navbar  = language[lang].Navbar
     return (
         <nav>
+            <ButtonLangage classname='desktop'/>
             <ul className="desktop--menu">
-                {Navbar.map((index, event) => {
+                {navbar.map((index) => {
                     return (
                         <li key={index.id}>
                             <a

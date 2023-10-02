@@ -1,9 +1,12 @@
-import React from 'react'
+import { skills } from './Techno'
+import { useSelector } from 'react-redux'
+import { language } from '../../../../lang/language'
 import '../Section.scss'
 import './Skills.scss'
-import { skills } from './Techno'
-// import image from '../../../assets/image/Logo/react-logo.png'
+
 const Skills = ({ children, props }) => {
+    const lang = useSelector(state => state.data.langage);
+    const advantage = language[lang].Section.Skills
     return (
         <section id='Skills' ref={props}>
             <div className='custom--container reveal'>
@@ -11,9 +14,7 @@ const Skills = ({ children, props }) => {
                     <div className='section--header'>
                         {children}
                         <div className='skills--header'>
-                            <h2>
-                                My <span>Advantages</span>
-                            </h2>
+                            <h2>{advantage.title} <span>{advantage.secondTitle}</span></h2>
                         </div>
                         <div className='skills--content' >
                             <div className='skills--inner'>

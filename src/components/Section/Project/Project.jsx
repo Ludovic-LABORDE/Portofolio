@@ -25,7 +25,7 @@ const Project = ({ children, props }) => {
                                     <img src="static/images/cosmokids/Mockup-application.png"/>
                                     <ul>
                                         <li><a href='#'>{cosmokids.firstTechno}</a></li>
-                                        <li><a href='#'>{cosmokids.firstTechno}</a></li>
+                                        <li><a href='#'>{cosmokids.secondTechno}</a></li>
                                     </ul>
                                 </div>
                                 <h3>{cosmokids.title}</h3>

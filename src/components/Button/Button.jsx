@@ -12,7 +12,7 @@ export const FakeButton = ({ href }) => {
     return (
         <a className="btn--contact" onClick={(event) => Redirect(event, href)}>
             <i className="las la-envelope"></i>
-            {language[lang].Button.FakeButton}
+            <span>{language[lang].Button.FakeButton}</span>   
         </a>
     )
 }
@@ -22,7 +22,7 @@ export const ButtonSubmit = () => {
     return (
         <button className="btn--contact">
             <i className="las la-envelope"></i>
-            {language[lang].Button.ButtonSubmit}
+            <span>{language[lang].Button.ButtonSubmit}</span>
         </button>
     )
 }

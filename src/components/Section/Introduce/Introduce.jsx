@@ -26,8 +26,8 @@ const Introduce = ({ children, props }) => {
                                 <h2>{introduce.numberProject}</h2>
                                 <p>{introduce.project}</p>
                             </div>
-                            <ButtonProject />
                         </div>
+                            <ButtonProject />
                     </div>
                 </div>
             </div>

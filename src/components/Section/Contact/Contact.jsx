@@ -33,7 +33,7 @@ const Contact = ({ children, props }) => {
                     <div className='section--header'>
                         {children}
                         <div className='contact--header'>
-                            <h2>{contact.title} <span>{contact.secondTitle}</span></h2>
+                            <h2>{contact.title} <i>{contact.secondTitle}</i></h2>
                         </div>
                         <div className='contact--content'>
                             <form onSubmit={handleSubmit(onSubmit)}>
@@ -41,7 +41,7 @@ const Contact = ({ children, props }) => {
 
                                     return (
                                         <div className='box--input' key={id}>
-                                            <label>{label}{required && <span> *</span>}</label>
+                                            <label>{label}{required && <i> *</i>}</label>
                                             <input
                                                 className='contact--input'
                                                 placeholder={placeholder}
@@ -53,7 +53,7 @@ const Contact = ({ children, props }) => {
                                 })}
                                 <div className='box--inputMessage'>
 
-                                    <label>{contact.textarea.label}<span>*</span></label>
+                                    <label>{contact.textarea.label}<i>*</i></label>
                                     <textarea
                                         className='contact--inputMessage'
                                         placeholder={contact.textarea.placeholder}

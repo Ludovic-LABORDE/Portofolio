@@ -7,7 +7,7 @@
         margin-bottom: 5rem;
     }
 
-    span {
+    i {
         color: var.$green;
     }
 }
@@ -23,9 +23,10 @@
         display: flex;
         flex-wrap: wrap;
 
-        span {
+        i {
             color: red;
         }
+
 
         .contact--input:focus-visible,
         .contact--inputMessage:focus-visible {
@@ -90,8 +91,11 @@
 }
 @media screen and (max-width: 788px) {
     .contact--content {
+        width: 100%;
         form {
+            display: flex;
             width: 100%;
+            align-items: center;
             flex-direction: column;
             .box--input {
                 width: 100%;

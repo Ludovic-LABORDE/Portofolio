@@ -44,6 +44,8 @@ h1 {
 
 @media screen and (max-width: 1380px) {
     section {
+        width: 100%;
+
         .custom--container {
             display: flex;
             justify-self: center;
@@ -72,16 +74,30 @@ h1 {
 
 @media screen and (max-width: 585px) {
     section {
+        padding-bottom: 0;
+        .section--header {
 
-        .project--header,
-        .skills--header,
-        .contact--header,
-        .resume--header,
-        .about--header {
-            h2{
-                font-size: 38px !important;
-                line-height: 1.4 !important;
+            display: flex !important;
+            align-items: center !important;
+
+
+            .project--header,
+            .skills--header,
+            .contact--header,
+            .resume--header,
+            .about--header {
+
+                h2 {
+                    font-size: 42px !important;
+                    line-height: 1.4 !important;
+                    text-align: center !important;
+                }
+
+
             }
         }
+    }
+    section:last-child{
+        padding-bottom: 68px;
     }
 }

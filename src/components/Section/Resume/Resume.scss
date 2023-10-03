@@ -91,3 +91,12 @@
         margin-top: 40px;
     }
 }
+@media screen and (max-width: 585px) {
+    .custom--container {
+        .resume--detail {
+            padding-left: 50px;
+            min-width: 280px;
+            width: 60%;
+        }
+    }
+}

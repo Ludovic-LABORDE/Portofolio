@@ -30,13 +30,16 @@
 
         .contact--input:focus-visible,
         .contact--inputMessage:focus-visible {
-            outline: 2px solid var.$green;
+            border: none;
+            outline: 1px solid var.$green !important;
             transition: .1s;
+            color: white;
         }
 
         .box--input {
             display: flex;
             flex-direction: column;
+            position: relative;
             width: 49%;
             margin-bottom: 80px;
 
@@ -44,17 +47,42 @@
                 margin-bottom: 20px;
             }
 
-            .contact--input {
-                max-width: 100%;
-                padding-left: 10px;
-                height: 3em;
-                border: none;
-                font-family: 'Poppins', sans-serif !important;
-            }
-            .contact--input::placeholder {
-                font-family: 'Poppins', sans-serif !important;
+            input:autofill {
+                background-color: var.$primary !important;
+                color: white !important;
+                -webkit-text-fill-color: white;
+                -webkit-background-clip: text;
             }
 
+            .contact--input {
+                max-width: 100%;
+                color: white;
+                padding: 0 15px;
+                height: 3em;
+                border: none;
+                background-color: var.$primary;
+                outline: 1px solid var.$gray;
+                border-radius: 25px;
+                font-family: 'Poppins', sans-serif !important;
+
+                &::placeholder {
+                    font-family: 'Poppins', sans-serif !important;
+                }
+
+            }
+
+            input[type=number]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+
+            .form--error {
+                position: absolute;
+                bottom: -25px;
+                font-size: 12px;
+                font-weight: 600;
+                color: red;
+                margin-left: 10px;
+            }
 
 
         }
@@ -64,17 +92,31 @@
         }
 
         .box--inputMessage {
+            position: relative;
             width: 100%;
+            .form--error {
+                position: absolute;
+                bottom: -25px;
+                font-size: 12px;
+                font-weight: 600;
+                color: red;
+                margin-left: 10px;
+            }
             .contact--inputMessage {
                 font-family: 'Poppins', sans-serif !important;
                 max-width: 100%;
                 min-width: 100%;
+                color: white;
                 box-sizing: border-box;
-                margin-bottom: 80px;
+                
                 margin-top: 20px;
-                padding-left: 10px;
+                padding: 0 15px;
                 padding-top: 10px;
                 min-height: 10em;
+                background-color: var.$primary;
+                outline: 1px solid var.$gray;
+                border: none;
+                border-radius: 20px;
                 resize: vertical;
             }
 
@@ -86,20 +128,26 @@
 
         button {
             width: 40%;
+            margin-top: 80px;
+
         }
     }
 }
+
 @media screen and (max-width: 788px) {
     .contact--content {
         width: 100%;
+
         form {
             display: flex;
             width: 100%;
             align-items: center;
             flex-direction: column;
+
             .box--input {
                 width: 100%;
             }
+
             .box--input:nth-child(2n) {
                 margin-left: 0;
             }

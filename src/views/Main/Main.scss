@@ -184,6 +184,7 @@
                 transition: 0.5s;
                 max-width: 800px;
                 cursor: default;
+
                 h3 {
                     margin-top: 20px;
 
@@ -282,6 +283,7 @@
                 transform: rotate(90deg);
                 min-width: fit-content;
                 min-height: fit-content;
+                padding: env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
 
                 &--inner {
                     img {
@@ -296,20 +298,24 @@
                     bottom: -50px;
                     right: 0px;
                     z-index: 9999;
-                    .la-angle-double-up{
+
+                    .la-angle-double-up {
                         position: fixed;
                         right: 47%;
                         bottom: 15px;
                     }
+
                     .cosmokids--box {
                         background-color: #00000099;
                         padding: 10px;
                         border-radius: 15px;
                         margin: 0 10px;
+
                         p {
                             color: var.$gray;
                         }
                     }
+
                     &:hover {
                         .la-angle-double-up {
                             transition: .3s;
@@ -353,7 +359,6 @@
     .wrapper--main {
         padding: 0 10px;
         width: 95%;
-        overflow-x: hidden;
 
     }
 }

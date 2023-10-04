@@ -10,8 +10,9 @@ const Contact = ({ children, props }) => {
     const lang = useSelector(state => state.data.langage)
     const contact = language[lang].Section.Contact
     const input = contact.input
-    const { register, handleSubmit, reset } = useForm();
-
+    // let cond = contact.condition
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    const ErrorStyle = "1px solid red"
     const onSubmit = (data) => {
         const templateID = import.meta.env.VITE_TEMPLATE_ID;
         const serviceID = import.meta.env.VITE_SERVICE_ID;
@@ -25,6 +26,7 @@ const Contact = ({ children, props }) => {
         });
 
         reset();
+
     }
     return (
         <section id='Contact' ref={props}>
@@ -38,28 +40,34 @@ const Contact = ({ children, props }) => {
                         <div className='contact--content'>
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 {input.map(({ name, placeholder, required, label, id, type }) => {
-
+                                    const cond = contact.condition[name]
                                     return (
                                         <div className='box--input' key={id}>
                                             <label>{label}{required && <i> *</i>}</label>
                                             <input
                                                 className='contact--input'
+                                                style={{outline: errors[name] && ErrorStyle }}
                                                 placeholder={placeholder}
                                                 type={type}
-                                                {...register(name)}
+                                                {...register(name, cond  ? cond : '')} 
+                                                
                                             />
+                                             {errors[name] && <p className="form--error">{errors[name].message}</p>}
                                         </div>
                                     )
                                 })}
                                 <div className='box--inputMessage'>
 
-                                    <label>{contact.textarea.label}<i>*</i></label>
+                                    <label>{contact.textarea.label}<i> *</i></label>
                                     <textarea
                                         className='contact--inputMessage'
                                         placeholder={contact.textarea.placeholder}
+                                        style={{outline: errors["message"] && ErrorStyle }}
                                         type='text'
-                                        {...register('message')}
+                                        {...register('message', contact.condition.message)}
                                     />
+                                             {errors['message'] && <p className="form--error">{errors['message'].message}</p>}
+
                                 </div>
                                 <ButtonSubmit />
                             </form>

@@ -42,6 +42,7 @@
         .la-code {
             color: var.$green;
             font-size: 30px;
+            cursor: default;
         }
     }
     &--email {
@@ -89,6 +90,7 @@
 
                 i {
                     color: var.$gray;
+                    
                 }
             }
 

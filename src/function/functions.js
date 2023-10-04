@@ -30,5 +30,4 @@ export const Redirect = (event, href) => {
     event.preventDefault();
     let element = document.querySelector(href);
     element.scrollIntoView({ behavior: 'smooth',  block: "start"});
-
 }

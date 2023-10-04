@@ -50,7 +50,7 @@ export const language = {
             },
         ],
         Social: {
-            name: "Sociale"
+            name: "Social"
         },
         Section: {
             TitleSection: [
@@ -132,7 +132,48 @@ export const language = {
                         type: 'text',
                         required: true,
                     },
-                ]
+                ],
+                condition: {
+                    email: {
+                        required: "This field is required.",
+                        pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: "Your e-mail is invalid."
+                        },
+                        maxLength: {
+                            value: 40,
+                            message: "Your email must be less than 40 characters."
+                        }
+                    },
+                    name: {
+                        required: "This field is required.",
+                        minLength: {
+                            value: 3,
+                            message: "The field must contain between 3 and 25 characters.",
+                        },
+                        maxLength: {
+                            value: 25,
+                            message: "The field must contain between 3 and 25 characters."
+                        }
+                    },
+                    subject: {
+                        required: "This field is required.",
+                    },
+                    message: {
+                        required: "This field is required.",
+
+                    },
+                    phone: {
+                        minLength: {
+                            value: 4,
+                            message: "Invalid phone number.",
+                        },
+                        maxLength: {
+                            value: 15,
+                            message: "Invalid phone number."
+                        }
+                    }
+                }
             },
             Introduce: {
                 title: "Hello, I'm ",
@@ -188,14 +229,14 @@ export const language = {
                         {
                             id: 2,
                             name: 'Landing page',
-                            alt:"Landing page cosmokids",
+                            alt: "Landing page cosmokids",
                             description: "With NASA's API, every visit to the site welcomes an image of the cosmos and its history.",
                             picture: 'static/images/cosmokids/Landing.png'
                         },
                         {
                             id: 3,
                             name: 'Quiz',
-                            alt:"Quiz cosmokids",
+                            alt: "Quiz cosmokids",
                             description: 'This quiz is linked to several lessons on the project.',
                             picture: 'static/images/cosmokids/Quizz.png'
                         },
@@ -256,7 +297,7 @@ export const language = {
             },
         ],
         Social: {
-            name: "Sociale"
+            name: "Résaux sociaux"
         },
         Section: {
             TitleSection: [
@@ -338,76 +379,117 @@ export const language = {
                         type: 'text',
                         required: true,
                     },
+                ],
+                condition: {
+                    email: {
+                        required: "Ce champ est requis.",
+                        pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: "Votre e-mail est invalide."
+                        },
+                        maxLength: {
+                            value: 40,
+                            message: "Votre email doit être inférieur à 40 caractères"
+                        }
+                    },
+                    name: {
+                        required: "Ce champ est requis.",
+                        minLength: {
+                            value: 3,
+                            message: "Le champ doit contenir entre 3 et 25 caractères.",
+                        },
+                        maxLength: {
+                            value: 25,
+                            message: "Le champ doit contenir entre 3 et 25 caractères.."
+                        }
+                    },
+                    subject: {
+                        required: "Ce champ est requis.",
+                    },
+                    message: {
+                        required: "Ce champ est requis.",
+
+                    },
+                    phone: {
+                        minLength: {
+                            value: 4,
+                            message: "Numéro de téléphone invalide.",
+                        },
+                        maxLength: {
+                            value: 15,
+                            message: "Numéro de téléphone invalide."
+                        }
+                    }
+                }
+            }
+        },
+        Introduce: {
+            title: "Bonjour, je suis ",
+            secondTitle: "Ludovic",
+            thirdTitle: ", un développeur passioné.",
+            text: "''Chaque ligne de code que j'écris est une occasion de créer, d'innover et de laisser ma passion pour le développement façonner l'avenir numérique.''",
+            numberExperience: "1+",
+            experience: "ANNÉES D'EXPÉRIENCE",
+            numberProject: "5+",
+            project: "PROJETS ACHEVÉS",
+        },
+        Resume: {
+            title: "Formation  & ",
+            secondTitle: "Expérience",
+            web: {
+                firstDate: "2023 - Aujourd'hui",
+                firstTitle: "Développeur Web & Web Mobile",
+                firstSubtitle: "Projet de fin de formation",
+                firstRole: "Git Master / Développeur Front-end en React-JS",
+                firstText: "Développement collaboratif d'applications Web, de la conceptualisation au déploiement de MVP à l'aide d'une méthodologie agile.",
+                secondSubtitle: "École O'clock",
+                secondTraining: "Programmes complets de formation de développeurs Web : 798 heures",
+                secondSkills: "Compétences fondamentales en matière de développement web : HTML5/CSS3/JavaScript/PHP/MySQL",
+                secondSpe: "1 mois de spécialisation : React-JS",
+            },
+            operator: {
+                firstDate: "2022 - 2023",
+                firstTitle: "Opérateur de production et agent polyvalent",
+                firstSubtitle: "‌Eviosys Packaging France",
+                firstRole: "Préparation de la production et exécution des ajustements nécessaires",
+                firstText: "Effectuer des interventions de maintenance préventive et corrective",
+            }
+        },
+        Skills: {
+            title: "Mes",
+            secondTitle: "Avantages"
+        },
+        Project: {
+            title: "Mes ",
+            secondTitle: "Projets",
+            Cosmokids: {
+                title: "Cosmokids - Plateforme d'éducation pour enfants",
+                firstTechno: "React-JS",
+                secondTechno: "Laravel/PHP",
+                Inner: [
+                    {
+                        id: 1,
+                        name: 'CosmoKids',
+                        alt: "Mockup cosmokids",
+                        description: "Une application web où les enfants peuvent apprendre l'astronomie grâce à un contenu amusant et interactif.",
+                        picture: 'static/images/cosmokids/Mockup-application-800x400.png'
+                    },
+                    {
+                        id: 2,
+                        name: 'Landing page',
+                        alt: "Page d'attérissage cosmokids",
+                        description: "Grâce à l'API de la NASA, chaque visite sur le site accueille une image du cosmos et de son histoire.",
+                        picture: 'static/images/cosmokids/Landing.png'
+                    },
+                    {
+                        id: 3,
+                        name: 'Quiz',
+                        alt: "Quiz cosmokids",
+                        description: 'Ce quiz est lié à plusieurs leçons sur le projet.',
+                        picture: 'static/images/cosmokids/Quizz.png'
+                    },
                 ]
-            },
-            Introduce: {
-                title: "Bonjour, je suis ",
-                secondTitle: "Ludovic",
-                thirdTitle: ", un développeur passioné.",
-                text: "''Chaque ligne de code que j'écris est une occasion de créer, d'innover et de laisser ma passion pour le développement façonner l'avenir numérique.''",
-                numberExperience: "1+",
-                experience: "ANNÉES D'EXPÉRIENCE",
-                numberProject: "5+",
-                project: "PROJETS ACHEVÉS",
-            },
-            Resume: {
-                title: "Formation  & ",
-                secondTitle: "Expérience",
-                web: {
-                    firstDate: "2023 - Aujourd'hui",
-                    firstTitle: "Développeur Web & Web Mobile",
-                    firstSubtitle: "Projet de fin de formation",
-                    firstRole: "Git Master / Développeur Front-end en React-JS",
-                    firstText: "Développement collaboratif d'applications Web, de la conceptualisation au déploiement de MVP à l'aide d'une méthodologie agile.",
-                    secondSubtitle: "École O'clock",
-                    secondTraining: "Programmes complets de formation de développeurs Web : 798 heures",
-                    secondSkills: "Compétences fondamentales en matière de développement web : HTML5/CSS3/JavaScript/PHP/MySQL",
-                    secondSpe: "1 mois de spécialisation : React-JS",
-                },
-                operator: {
-                    firstDate: "2022 - 2023",
-                    firstTitle: "Opérateur de production et agent polyvalent",
-                    firstSubtitle: "‌Eviosys Packaging France",
-                    firstRole: "Préparation de la production et exécution des ajustements nécessaires",
-                    firstText: "Effectuer des interventions de maintenance préventive et corrective",
-                }
-            },
-            Skills: {
-                title: "Mes",
-                secondTitle: "Avantages"
-            },
-            Project: {
-                title: "Mes ",
-                secondTitle: "Projets",
-                Cosmokids: {
-                    title: "Cosmokids - Plateforme d'éducation pour enfants",
-                    firstTechno: "React-JS",
-                    secondTechno: "Laravel/PHP",
-                    Inner: [
-                        {
-                            id: 1,
-                            name: 'CosmoKids',
-                            alt:"Mockup cosmokids",
-                            description: "Une application web où les enfants peuvent apprendre l'astronomie grâce à un contenu amusant et interactif.",
-                            picture: 'static/images/cosmokids/Mockup-application-800x400.png'
-                        },
-                        {
-                            id: 2,
-                            name: 'Landing page',
-                            alt:"Page d'attérissage cosmokids",
-                            description: "Grâce à l'API de la NASA, chaque visite sur le site accueille une image du cosmos et de son histoire.",
-                            picture: 'static/images/cosmokids/Landing.png'
-                        },
-                        {
-                            id: 3,
-                            name: 'Quiz',
-                            alt:"Quiz cosmokids",
-                            description: 'Ce quiz est lié à plusieurs leçons sur le projet.',
-                            picture: 'static/images/cosmokids/Quizz.png'
-                        },
-                    ]
-                }
             }
         }
     }
-};
+}

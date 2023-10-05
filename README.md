@@ -12,7 +12,7 @@
 - *Redux-Toolkit*
 - *Email-js*
 
-[Portofolio](/guides/content/editing-an-existing-page)
+[Portofolio](https://ludovic-laborde.vercel.app/)
 
 
 

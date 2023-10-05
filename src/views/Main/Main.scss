@@ -132,7 +132,7 @@
                 cursor: pointer;
                 font-size: 200%;
                 opacity: 0;
-
+                z-index: 9999;
                 &:hover {
                     opacity: .7;
 
@@ -141,6 +141,8 @@
         }
 
         .content--inner {
+            position: absolute;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -264,10 +266,14 @@
                         position: absolute;
                         bottom: 0;
                         flex-direction: column-reverse;
+
                         .la-angle-double-up {
                             bottom: 0;
                             color: rgb(255, 255, 255);
+
+
                         }
+
                         .cosmokids--box {
                             width: auto;
                             margin: 0 10px;
@@ -275,19 +281,31 @@
                             padding-top: 0;
                             background-color: #00000099;
                             border-radius: 15px;
-    
+
                             p {
                                 color: var.$gray;
                             }
 
                         }
+
                         &:hover {
                             opacity: 1;
-                            bottom: -60px;
-                            
+                            bottom: -27px;
+                            .la-angle-double-up {
+                                display: none;
+                            }
                         }
                     }
                 }
+            }
+            .cross {
+                z-index: 9999;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 24px;
+                color: #ffffff;
+    
             }
         }
     }
@@ -315,6 +333,7 @@
 @media screen and (max-width: 585px) {
 
     .wrapper--main {
+
         .container--caroussel {
             position: fixed;
             width: 100vw;
@@ -327,39 +346,32 @@
             z-index: 999;
 
             .img--content {
-                // justify-self: center;
-                // align-self: center;
-                // display: flex;
-                position: relative;
-                // // transform: rotate(90deg);
-                // min-width: fit-content;
-                // min-height: fit-content;
-                padding: env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
+                justify-self: center;
+                align-self: center;
+                display: flex;
 
-                // &--inner {
-                //     img {
-                //         width: 150vw;
-                //         aspect-ratio: 16 / 9;
-                //     }
-                // }
+                min-width: fit-content;
+                min-height: fit-content;
+
 
                 .content--inner {
                     width: 100%;
-                    z-index: 9999;
                     position: absolute;
-                    top: 0;
+
 
                     .la-angle-double-up {
                         position: fixed;
                         right: 47%;
-                        bottom: 15px;
+                        bottom: -40px;
                     }
 
                     .cosmokids--box {
                         background-color: #00000099;
                         padding: 10px;
+                        padding-top: 0;
                         border-radius: 15px;
-                        margin: 0 10px;
+                        margin:  10px;
+                        bottom: -140px;
 
                         p {
                             color: var.$gray;
@@ -367,10 +379,7 @@
                     }
 
                     &:hover {
-                        .la-angle-double-up {
-                            transition: .3s;
-                            opacity: 0;
-                        }
+
 
                         .cosmokids--box {
                             transform: translateY(-60px);

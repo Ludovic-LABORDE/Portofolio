@@ -12,8 +12,7 @@
 - *Redux-Toolkit*
 - *Email-js*
 
-### Preview:
-![Watch the video](./src/assets/video/preview.gif)
+[Portofolio](/guides/content/editing-an-existing-page)
 
 
 

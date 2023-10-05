@@ -7,7 +7,6 @@ import './Skills.scss'
 const Skills = ({ children, props }) => {
     const lang = useSelector(state => state.data.langage);
     const advantage = language[lang].Section.Skills
-    console.log(advantage)
     return (
         <section id='Skills' ref={props}>
             <div className='custom--container reveal'>

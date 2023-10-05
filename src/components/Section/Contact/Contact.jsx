@@ -10,7 +10,6 @@ const Contact = ({ children, props }) => {
     const lang = useSelector(state => state.data.langage)
     const contact = language[lang].Section.Contact
     const input = contact.input
-    // let cond = contact.condition
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const ErrorStyle = "1px solid red"
     const onSubmit = (data) => {

@@ -54,13 +54,13 @@ const Main = () => {
                                     <i className="las la-angle-left" onClick={() => dispatch(switchProjectLeft())}></i>
                                     <i className="las la-angle-right" onClick={() => dispatch(switchProjectRight())}></i>
 
-                                <div className="content--inner">
-                                    <i className="las la-angle-double-up"></i>
-                                    <div className={`cosmokids--box ${imageVisible ? "visible" : ""}`}>
-                                        <h3>{name}</h3>
-                                        <p>{description}</p>
+                                    <div className="content--inner">
+                                        <i className="las la-angle-double-up"></i>
+                                        <div className={`cosmokids--box ${imageVisible ? "visible" : ""}`}>
+                                            <h3>{name}</h3>
+                                            <p>{description}</p>
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                                 <i className="las la-times cross" alt="cross" onClick={() => dispatch(setActiveBackground(false))}></i>
                             </div>

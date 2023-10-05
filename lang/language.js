@@ -245,7 +245,6 @@ export const language = {
             }
         }
     },
-
     fr: {
         Button: {
             FakeButton: "CONTACTEZ-MOI",
@@ -421,74 +420,74 @@ export const language = {
                         }
                     }
                 }
-            }
-        },
-        Introduce: {
-            title: "Bonjour, je suis ",
-            secondTitle: "Ludovic",
-            thirdTitle: ", un développeur passioné.",
-            text: "''Chaque ligne de code que j'écris est une occasion de créer, d'innover et de laisser ma passion pour le développement façonner l'avenir numérique.''",
-            numberExperience: "1+",
-            experience: "ANNÉES D'EXPÉRIENCE",
-            numberProject: "5+",
-            project: "PROJETS ACHEVÉS",
-        },
-        Resume: {
-            title: "Formation  & ",
-            secondTitle: "Expérience",
-            web: {
-                firstDate: "2023 - Aujourd'hui",
-                firstTitle: "Développeur Web & Web Mobile",
-                firstSubtitle: "Projet de fin de formation",
-                firstRole: "Git Master / Développeur Front-end en React-JS",
-                firstText: "Développement collaboratif d'applications Web, de la conceptualisation au déploiement de MVP à l'aide d'une méthodologie agile.",
-                secondSubtitle: "École O'clock",
-                secondTraining: "Programmes complets de formation de développeurs Web : 798 heures",
-                secondSkills: "Compétences fondamentales en matière de développement web : HTML5/CSS3/JavaScript/PHP/MySQL",
-                secondSpe: "1 mois de spécialisation : React-JS",
             },
-            operator: {
-                firstDate: "2022 - 2023",
-                firstTitle: "Opérateur de production et agent polyvalent",
-                firstSubtitle: "‌Eviosys Packaging France",
-                firstRole: "Préparation de la production et exécution des ajustements nécessaires",
-                firstText: "Effectuer des interventions de maintenance préventive et corrective",
-            }
-        },
-        Skills: {
-            title: "Mes",
-            secondTitle: "Avantages"
-        },
-        Project: {
-            title: "Mes ",
-            secondTitle: "Projets",
-            Cosmokids: {
-                title: "Cosmokids - Plateforme d'éducation pour enfants",
-                firstTechno: "React-JS",
-                secondTechno: "Laravel/PHP",
-                Inner: [
-                    {
-                        id: 1,
-                        name: 'CosmoKids',
-                        alt: "Mockup cosmokids",
-                        description: "Une application web où les enfants peuvent apprendre l'astronomie grâce à un contenu amusant et interactif.",
-                        picture: 'static/images/cosmokids/Mockup-application-800x400.png'
-                    },
-                    {
-                        id: 2,
-                        name: 'Landing page',
-                        alt: "Page d'attérissage cosmokids",
-                        description: "Grâce à l'API de la NASA, chaque visite sur le site accueille une image du cosmos et de son histoire.",
-                        picture: 'static/images/cosmokids/Landing.png'
-                    },
-                    {
-                        id: 3,
-                        name: 'Quiz',
-                        alt: "Quiz cosmokids",
-                        description: 'Ce quiz est lié à plusieurs leçons sur le projet.',
-                        picture: 'static/images/cosmokids/Quizz.png'
-                    },
-                ]
+            Introduce: {
+                title: "Bonjour, je suis ",
+                secondTitle: "Ludovic",
+                thirdTitle: ", un développeur passioné.",
+                text: "''Chaque ligne de code que j'écris est une occasion de créer, d'innover et de laisser ma passion pour le développement façonner l'avenir numérique.''",
+                numberExperience: "1+",
+                experience: "ANNÉES D'EXPÉRIENCE",
+                numberProject: "5+",
+                project: "PROJETS ACHEVÉS",
+            },
+            Resume: {
+                title: "Formation  & ",
+                secondTitle: "Expérience",
+                web: {
+                    firstDate: "2023 - Aujourd'hui",
+                    firstTitle: "Développeur Web & Web Mobile",
+                    firstSubtitle: "Projet de fin de formation",
+                    firstRole: "Git Master / Développeur Front-end en React-JS",
+                    firstText: "Développement collaboratif d'applications Web, de la conceptualisation au déploiement de MVP à l'aide d'une méthodologie agile.",
+                    secondSubtitle: "École O'clock",
+                    secondTraining: "Programmes complets de formation de développeurs Web : 798 heures",
+                    secondSkills: "Compétences fondamentales en matière de développement web : HTML5/CSS3/JavaScript/PHP/MySQL",
+                    secondSpe: "1 mois de spécialisation : React-JS",
+                },
+                operator: {
+                    firstDate: "2022 - 2023",
+                    firstTitle: "Opérateur de production et agent polyvalent",
+                    firstSubtitle: "‌Eviosys Packaging France",
+                    firstRole: "Préparation de la production et exécution des ajustements nécessaires",
+                    firstText: "Effectuer des interventions de maintenance préventive et corrective",
+                }
+            },
+            Skills: {
+                title: "Mes",
+                secondTitle: "Avantages"
+            },
+            Project: {
+                title: "Mes ",
+                secondTitle: "Projets",
+                Cosmokids: {
+                    title: "Cosmokids - Plateforme d'éducation pour enfants",
+                    firstTechno: "React-JS",
+                    secondTechno: "Laravel/PHP",
+                    Inner: [
+                        {
+                            id: 1,
+                            name: 'CosmoKids',
+                            alt: "Mockup cosmokids",
+                            description: "Une application web où les enfants peuvent apprendre l'astronomie grâce à un contenu amusant et interactif.",
+                            picture: 'static/images/cosmokids/Mockup-application-800x400.png'
+                        },
+                        {
+                            id: 2,
+                            name: 'Landing page',
+                            alt: "Page d'attérissage cosmokids",
+                            description: "Grâce à l'API de la NASA, chaque visite sur le site accueille une image du cosmos et de son histoire.",
+                            picture: 'static/images/cosmokids/Landing.png'
+                        },
+                        {
+                            id: 3,
+                            name: 'Quiz',
+                            alt: "Quiz cosmokids",
+                            description: 'Ce quiz est lié à plusieurs leçons sur le projet.',
+                            picture: 'static/images/cosmokids/Quizz.png'
+                        },
+                    ]
+                }
             }
         }
     }

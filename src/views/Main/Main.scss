@@ -366,15 +366,21 @@
                     }
 
                     .cosmokids--box {
-                        background-color: #00000099;
+                        background-color: #fc000000;
                         padding: 10px;
                         padding-top: 0;
                         border-radius: 15px;
                         margin:  10px;
-                        bottom: -140px;
-
+                        top: 120px;
+                        word-wrap: break-word;
+                        overflow: hidden;
                         p {
                             color: var.$gray;
+                            max-height: 24px !important;
+                            overflow: auto;
+
+                            font-size: 12px;
+                            
                         }
                     }
 

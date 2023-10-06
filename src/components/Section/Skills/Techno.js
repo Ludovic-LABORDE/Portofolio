@@ -11,7 +11,7 @@ export const skills = [
         name: 'PHP/Laravel',
         alt: 'Laravel logo',
         image: '/static/images/Logo/laravel-logo.png',
-        size: '150'
+        size: '90'
     },
     {
         id: 3,
@@ -25,21 +25,21 @@ export const skills = [
         name: 'Whimsical',
         alt: 'Whimsical logo',
         image: '/static/images/Logo/whimsical-logo.png',
-        size: '150'
+        size: '90'
     },
     {
         id: 5,
         name: 'Sass',
         alt: 'Sass logo',
         image: '/static/images/Logo/sass-logo.png',
-        size: '80'
+        size: '90'
     },
     {
         id: 6,
         name: 'Git',
         alt: 'Git logo',
         image: '/static/images/Logo/git-logo.png',
-        size: '80'
+        size: '90'
     },
 
 ]

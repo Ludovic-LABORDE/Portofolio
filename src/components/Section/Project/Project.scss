@@ -21,6 +21,7 @@
             margin-bottom: 30px;
             height: 410px;
             cursor: pointer;
+
             img {
                 display: block;
                 width: 100%;
@@ -67,3 +68,28 @@
     }
 
 }
+
+@media screen and (max-width: 1380px) {
+    .project--content {
+        width: 100%;
+
+    }
+}
+
+    @media screen and (max-width: 585px) {
+        .project--content {
+            
+            &--cosmokids {
+                h3 {
+                    text-align: center;
+
+                }
+                .cosmokids--content {
+
+                    img {
+                        
+                    }
+                }
+            }
+        }
+    }

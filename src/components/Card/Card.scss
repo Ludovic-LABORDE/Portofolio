@@ -8,6 +8,7 @@
     padding: 50px;
     border: 1px solid #565656;
     border-radius: 30px;
+    width: 320px;
     top: 20%;
     left: 2%; 
     position: fixed;
@@ -113,9 +114,12 @@
     .sidebar {
         position: relative;
         max-width: 667px;
+        width: auto;
         margin: auto;
         transform: translateY(0);
         margin-top: 20px;
+        top: 0;
+        left: 0; 
         .avatar {
             width: 200px;
             height: 200px;
@@ -126,9 +130,10 @@
     }
     
 }
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 300px) {
     .sidebar {
-        top: 0;
-        left: 0; 
+        &--email {
+            font-size: 14px;
+        }
     }
 }

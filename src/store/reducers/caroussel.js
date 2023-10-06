@@ -5,8 +5,8 @@ import { language } from "../../../lang/language";
 
 const initialState = {
     position: 1,
-    project: language['en'].Section.Project.Cosmokids.Inner[0],
-    langage: 'en'
+    project: language['fr'].Section.Project.Cosmokids.Inner[0],
+    langage: 'fr'
 }
 
 const carousselSlice = createSlice({

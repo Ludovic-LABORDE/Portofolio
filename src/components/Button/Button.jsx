@@ -54,13 +54,13 @@ export const ButtonLangage = ({classname}) => {
     const [active, setActive] = useState(false);
 
     const handleClickFR = () => {
-        setActive(true);
+        setActive(false);
         dispatch(setLangage("fr"));
         dispatch(setLangageCaroussel("fr"));
     }
 
     const handleClickEN = () => {
-        setActive(false);
+        setActive(true);
         dispatch(setLangage("en"));
         dispatch(setLangageCaroussel("en"));
     }
@@ -68,8 +68,8 @@ export const ButtonLangage = ({classname}) => {
     return (
         <a className={`btn--langage ${classname}`}>
             <div className='btn--langage--box'>
-                <span className={`btn--langage--box--fr ${active ? 'active' : '' }` } onClick={handleClickFR}>fr</span>
-                <span className={`btn--langage--box--eng ${!active ? 'active' : ''}`} onClick={handleClickEN}>en</span>
+                <span className={`btn--langage--box--fr ${!active ? 'active' : '' }` } onClick={handleClickFR}>fr</span>
+                <span className={`btn--langage--box--eng ${ active ? 'active' : ''}`} onClick={handleClickEN}>en</span>
             </div>
         </a>
     )

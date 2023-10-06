@@ -442,7 +442,7 @@ export const language = {
                     firstText: "Développement collaboratif d'applications Web, de la conceptualisation au déploiement de MVP à l'aide d'une méthodologie agile.",
                     secondSubtitle: "École O'clock",
                     secondTraining: "Programmes complets de formation de développeurs Web : 798 heures",
-                    secondSkills: "Compétences fondamentales en matière de développement web : HTML5/CSS3/JavaScript/PHP/MySQL",
+                    secondSkills: "Compétences fondamentales en matière de développement web : HTML5/ CSS3/ JavaScript/ PHP/ MySQL",
                     secondSpe: "1 mois de spécialisation : React-JS",
                 },
                 operator: {

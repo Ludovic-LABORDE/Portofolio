@@ -66,6 +66,9 @@
         .skills--inner {
             .skills--box {
                 width: 40%;
+                img {
+                    width: 70px !important;
+                }
             }
             .skills--box:nth-child(4) {
                 margin-bottom: 35px;

@@ -12,7 +12,7 @@
 - *Redux-Toolkit*
 - *Email-js*
 
-[Portofolio](https://ludovic-laborde.vercel.app/)
+[Portofolio](https://ludovic-laborde.fr/)
 
 
 

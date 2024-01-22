@@ -7,7 +7,7 @@ const store = configureStore({
         data: dataReducer,
         caroussel: carousselReducer,
     },
-    devTools: true,
+    devTools: false,
 });
 
 export default store;
